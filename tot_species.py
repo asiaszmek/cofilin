@@ -13,7 +13,7 @@ sub_species={'Kal':['Kal','KalCKCamCa4','KalCKpCamCa4','KalPKAc','pKal','pKalPP1
              'Cam':['Cam','CamCa2C','CamCa2N','CaNCam','CaNCamCa2C','CaNCamCa2N','CaNCamCa4','CaNCamCa4pSSH','CamCa4','CKCamCa4','CKpCamCa4','CKpCamCa4PP1','KalCKCamCa4','KalCKpCamCa4','NgCam','AC1GasGTPCamCa4','AC1GasGTPCamCa4ATP','AC1CamCa4','AC1CamCa4ATP','AC8CamCa4','AC8CamCa4ATP'],
              'CK':['KalCKCamCa4','KalCKpCamCa4','CK','CKp','CKCamCa4','CKpCamCa4','CKpPP1','CKpCamCa4PP1'],
              'CaN':['CaN','CaNCam','CaNCamCa2C','CaNCamCa2N','CaNCamCa4','CaNCamCa4pSSH'],
-             'PP1':['Ip35PP1','PP1','CKpPP1','CKpCamCa4PP1','pKalPP1'],'Ip35':['Ip35','Ip35PP1'],
+             'PP1':['PP1'],
              'AC1':['AC1','AC1GasGTP','AC1GasGTPCamCa4','AC1GasGTPCamCa4ATP','AC1CamCa4','AC1CamCa4ATP'],'AC8':['AC8','AC8CamCa4','AC8CamCa4ATP'],
              'PDE4':['PDE4','PDE4cAMP','PKAcPDE4','pPDE4','pPDE4cAMP','PKAc_PDE4_cAMP'],
              'PDE1':['PDE1','PDE1CamCa4','PDE1CamCa4cAMP']}

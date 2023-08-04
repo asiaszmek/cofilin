@@ -39,13 +39,11 @@
     <NanoMolarity specieID="CKp" value="0.0" />
     <NanoMolarity specieID="CKCamCa4" value="72.7202" />
     <NanoMolarity specieID="CKpCamCa4" value="0.0" />
-    <NanoMolarity specieID="PP1" value="9954.3085" />
+    <NanoMolarity specieID="PP1" value="9500" />
     <NanoMolarity specieID="CKpPP1" value="0.0" />
     <NanoMolarity specieID="CKpCamCa4PP1" value="0.0" />
 
-    <NanoMolarity specieID="Ip35" value="0.0329" />
-    <NanoMolarity specieID="Ip35PP1" value="488.8287" />
-    <NanoMolarity specieID="Ng" value="1797.628" />
+     <NanoMolarity specieID="Ng" value="1797.628" />
     <NanoMolarity specieID="NgCam" value="19149.3508" />
 
     <NanoMolarity specieID="Ca" value="51.4638" />
