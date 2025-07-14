@@ -1,4 +1,5 @@
 import os
+import argparse
 import h5py
 import numpy as np
 import matplotlib.pyplot as plt
@@ -6,14 +7,25 @@ from lxml import etree
 from scipy.constants import Avogadro
 import pandas as pd
 
-fname = "Model_Cof-HFGlu_jRGECO1.h5"
-exp_res_spine = "ca_spine_HFGlu_jRGECO1.csv"
-exp_res_dend = "ca_dend_HFGlu_jRGECO1.csv"
+exp_res_spine = os.path.join("Exp_1spine",
+                             "ca_spine_HFGlu_jRGECO1.csv")
+exp_res_dend = os.path.join("Exp_1spine",
+                            "ca_dend_HFGlu_jRGECO1.csv")
 
 NA = Avogadro*1e-23
 
-t_init = 500000
 
+def Parser():
+    parser = argparse.ArgumentParser(description='Generation of figures')
+    parser.add_argument('input', nargs='+',
+                        help='input files')
+    parser.add_argument('--t_init', default=10000, type=float,
+                        help='Stimulation initiation in ms')
+    parser.add_argument('--specie', default='Ca2jRGECO1',
+                        help='Dye-bound specie')
+   
+
+    return parser
 
 def get_regions(my_file):
     grid_list = get_grid_list(my_file)
@@ -118,48 +130,58 @@ def get_fluo_sig(signal, t_init, dt):
 
 
 if __name__ == "__main__":
-    data_spine = []
-    data_dend = []
-    my_file = h5py.File(fname, "r")
+    fnames = []
+    args = Parser().parse_args()
+    for name in args.input:
+        fnames.append(name)
+    if not fnames:
+        sys.exit('Do specify at least one totals filename')
 
-    for key in my_file.keys():
-        if not key.startswith("trial"):
-            continue
-        spine = get_concentrations_region_list(my_file,["PSD",
-                                                        "head", "neck"],
-                                               key, "__main__",
-                                               "Ca2jRGECO1")
+    t_init = args.t_init
+    specie = args.specie
+    for fname in fnames:
+        data_spine = []
+        data_dend = []
+        my_file = h5py.File(fname, "r")
+        for key in my_file.keys():
+            if not key.startswith("trial"):
+                continue
+            spine = get_concentrations_region_list(my_file,["PSD",
+                                                            "head", "neck"],
+                                                   key, "__main__",
+                                                   specie)
         
-        dend = get_concentrations_region_list(my_file,["dend"],
-                                               key, "__main__",
-                                               "Ca2jRGECO1")
+            dend = get_concentrations_region_list(my_file,["dend"],
+                                                  key, "__main__",
+                                                  specie)
 
-        data_dend.append(dend)
-        data_spine.append(spine)
+            data_dend.append(dend)
+            data_spine.append(spine)
      
         
 
-    time = get_times(my_file, key, "__main__") - t_init     
+        time = get_times(my_file, key, "__main__") - t_init     
+        dt = time[1] - time[0]
+        out_spine, min_len = get_fluo_sig(data_spine, t_init, dt)
+        out_dend, min_len = get_fluo_sig(data_dend, t_init, dt)
+        spine_res = pd.read_csv(exp_res_spine)
+        dend_res = pd.read_csv(exp_res_dend)
 
-    dt = time[1] - time[0]
-    out_spine, min_len = get_fluo_sig(data_spine, t_init, dt)
-    out_dend, min_len = get_fluo_sig(data_dend, t_init, dt)
-    spine_res = pd.read_csv(exp_res_spine)
-    dend_res = pd.read_csv(exp_res_dend)
-
-    fig, ax = plt.subplots(1, 1, figsize=(5, 5))
-    ax.plot(time[:min_len]/1000, out_spine, "tab:green", label="Spine")
-    ax.plot(time[:min_len]/1000, out_dend, "tab:blue", label="Dendrite")
-    ax.plot(spine_res["x"], spine_res["Curve1"], "g", label="Spine experiment")
-    ax.plot(dend_res["x"], dend_res["Curve1"], "b", label="Dendrite experiment")
-
-    ax.set_xlabel("time (s)", fontsize=20)
-    ax.set_ylabel("Fluorescence change", fontsize=20)
-    ax.set_xlim([-60, 140])
-    ax.tick_params(axis='x', labelsize=15)
-    ax.tick_params(axis='y', labelsize=15)
-    ax.legend()
-    fig.savefig("HFGlu_comparison_with_DellAcquas_experiment.png", dpi=100,
-                bbox_inches="tight")
+        fig, ax = plt.subplots(1, 1, figsize=(5, 5))
+        ax.plot(time[:min_len]/1000, out_spine, "tab:green", label="Spine")
+        ax.plot(time[:min_len]/1000, out_dend, "tab:blue", label="Dendrite")
+        ax.plot(spine_res["x"], spine_res["Curve1"], "g",
+                label="Spine experiment")
+        ax.plot(dend_res["x"], dend_res["Curve1"], "b",
+                label="Dendrite experiment")
+        
+        ax.set_xlabel("time (s)", fontsize=20)
+        ax.set_ylabel("Fluorescence change", fontsize=20)
+        ax.set_xlim([-60, 140])
+        ax.tick_params(axis='x', labelsize=15)
+        ax.tick_params(axis='y', labelsize=15)
+        ax.legend()
+        fig.savefig("%s_comparison_with_DellAcquas_experiment.png" %
+                    fname[:-4], dpi=100, bbox_inches="tight")
 
     plt.show()
