@@ -9,8 +9,8 @@
           <xi:include href="../Rxn_Cof-oldCam_jRGECO1.xml" />
           <xi:include href="../Morph_dend_0.6um_spine1.xml" />        
           <xi:include href="../IC_Cofh5_updateh5_update-oldCam_jRGECO1.xml" />
-	  <xi:include href="../Stim_Cof-HFGlu.xml" />
-          <xi:include href="GECO_out.xml" />	   
+	  <xi:include href="Stim_Cof-HFGlu.xml" />
+          <xi:include href="../GECO_out.xml" />	   
     <!--2D means the morphology is interpreted like a flatworm, 3D for
 
 	roundworms. The 2D case is good for testing as it is easy to visualize the
