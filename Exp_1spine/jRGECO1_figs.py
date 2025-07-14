@@ -9,7 +9,7 @@ fname = "Model_Cof-HFGlu_jRGECO1.h5"
 exp_res_spine = "ca_spine_HFGlu_jRGECO1.csv"
 exp_res_dend = "ca_dend_HFGlu_jRGECO1.csv"
 
-t_init = 10000
+t_init = 500000
 
 def get_fluo_sig(signal, t_init, dt):
     min_len = min([len(dat) for dat in signal])
@@ -92,8 +92,12 @@ if __name__ == "__main__":
     ax.plot(time[:min_len]/1000, out_dend, "tab:blue", label="Dendrite model")
     ax.plot(spine_res["x"], spine_res["Curve1"], "g", label="Spine experiment")
     ax.plot(dend_res["x"], dend_res["Curve1"], "b", label="Dendrite experiment")
-    ax.set_xlabel("time (s)")
-    ax.set_ylabel("Fluorescence change")
+    ax.set_xlabel("time (s)", fontsize=20)
+    ax.set_ylabel("Fluorescence change", fontsize=20)
+    ax.set_xlim([-60, 140])
     ax.legend()
-    
+    ax.tick_params(axis='x', labelsize=15)
+    ax.tick_params(axis='y', labelsize=15)
+    fig.savefig("HFGlu_comparison_with_DellAcquas_experiment.png", dpi=100,
+                 bbox_inches="tight")
     plt.show()
