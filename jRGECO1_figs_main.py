@@ -7,9 +7,11 @@ from lxml import etree
 from scipy.constants import Avogadro
 import pandas as pd
 
-exp_res_spine = os.path.join("Exp_1spine",
+dir_path = os.path.dirname(__file__)
+print(dir_path)
+exp_res_spine = os.path.join(dir_path, "Exp_1spine",
                              "ca_spine_HFGlu_jRGECO1.csv")
-exp_res_dend = os.path.join("Exp_1spine",
+exp_res_dend = os.path.join(dir_path, "Exp_1spine",
                             "ca_dend_HFGlu_jRGECO1.csv")
 
 NA = Avogadro*1e-23
@@ -23,6 +25,8 @@ def Parser():
                         help='Stimulation initiation in ms')
     parser.add_argument('--specie', default='Ca2jRGECO1',
                         help='Dye-bound specie')
+    parser.add_argument('--dend_name', default='dend',
+                        help='Name of the region for visualization in the dendrite')
    
 
     return parser
@@ -139,6 +143,7 @@ if __name__ == "__main__":
 
     t_init = args.t_init
     specie = args.specie
+    dend_name = args.dend_name
     for fname in fnames:
         data_spine = []
         data_dend = []
@@ -151,7 +156,7 @@ if __name__ == "__main__":
                                                    key, "__main__",
                                                    specie)
         
-            dend = get_concentrations_region_list(my_file,["dend"],
+            dend = get_concentrations_region_list(my_file,[dend_name],
                                                   key, "__main__",
                                                   specie)
 
