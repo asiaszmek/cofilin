@@ -5,27 +5,27 @@
   <!--Ca -->
 
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
-  <onset>               10000          </onset>
+  <onset>               500000          </onset>
   <duration>        500         </duration>
   <rate>                20     </rate>
   <period>        1000             </period>
-  <end>         12000           </end>
+  <end>         502000           </end>
 </InjectionStim>
 
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
-  <onset>               12000          </onset>
+  <onset>               502000          </onset>
   <duration>        500         </duration>
   <rate>                5     </rate>
   <period>        1000             </period>
-  <end>         14000           </end>
+  <end>         504000           </end>
 </InjectionStim>
 
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
-  <onset>               15000          </onset>
+  <onset>               505000          </onset>
   <duration>        500         </duration>
   <rate>                1.5     </rate>
   <period>        1000             </period>
-  <end>         30000           </end>
+  <end>         530000           </end>
 </InjectionStim>
 
 <!-- <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA"> -->
@@ -37,19 +37,19 @@
 <!-- </InjectionStim> -->
 
 <InjectionStim specieID="Ca" injectionSite="dend:submembrane">
-  <onset>               20000          </onset>
+  <onset>               510000          </onset>
   <duration>        20         </duration>
   <rate>                40     </rate>
   <period>        1000             </period>
-  <end>         70000           </end>
+  <end>         560000           </end>
 </InjectionStim>
 
 <InjectionStim specieID="Ca" injectionSite="dend:submembrane">
-  <onset>               10000          </onset>
+  <onset>               500000          </onset>
   <duration>        30         </duration>
   <rate>                80     </rate>
   <period>        1000             </period>
-  <end>         20000           </end>
+  <end>         510000           </end>
 </InjectionStim>
 
 </StimulationSet>
