@@ -8,7 +8,7 @@ from scipy.constants import Avogadro
 import pandas as pd
 
 dir_path = os.path.dirname(__file__)
-print(dir_path)
+
 exp_res_spine = os.path.join(dir_path, "Exp_1spine",
                              "ca_spine_HFGlu_jRGECO1.csv")
 exp_res_dend = os.path.join(dir_path, "Exp_1spine",
