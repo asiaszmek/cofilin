@@ -10,7 +10,7 @@
           <xi:include href="../Morph_5um_dend_spines.xml" />        
           <xi:include href="../IC_Cofh5_update_PKAKOh5_update_PKAKO-oldCam.xml" />
           <xi:include href="../Out_Cof.xml" />
-	  <xi:include href="../Stim_Cof-HFGlu.xml" />
+	  <xi:include href="Stim_Cof-HFGlu.xml" />
 	   
     <!--2D means the morphology is interpreted like a flatworm, 3D for
 

@@ -1,0 +1,55 @@
+<StimulationSet>
+
+ <!-- no Ligand, because Glu uncaging-->
+
+  <!--Ca -->
+
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+  <onset>               500000          </onset>
+  <duration>        500         </duration>
+  <rate>                20     </rate>
+  <period>        1000             </period>
+  <end>         502000           </end>
+</InjectionStim>
+
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+  <onset>               502000          </onset>
+  <duration>        500         </duration>
+  <rate>                5     </rate>
+  <period>        1000             </period>
+  <end>         504000           </end>
+</InjectionStim>
+
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+  <onset>               505000          </onset>
+  <duration>        500         </duration>
+  <rate>                1.5     </rate>
+  <period>        1000             </period>
+  <end>         530000           </end>
+</InjectionStim>
+
+<!-- <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA"> -->
+<!--   <onset>               30000          </onset> -->
+<!--   <duration>        500         </duration> -->
+<!--   <rate>                0.5    </rate> -->
+<!--   <period>        1000             </period> -->
+<!--   <end>         70000           </end> -->
+<!-- </InjectionStim> -->
+
+<InjectionStim specieID="Ca" injectionSite="dend:submembrane">
+  <onset>               510000          </onset>
+  <duration>        20         </duration>
+  <rate>                40     </rate>
+  <period>        1000             </period>
+  <end>         560000           </end>
+</InjectionStim>
+
+<InjectionStim specieID="Ca" injectionSite="dend:submembrane">
+  <onset>               500000          </onset>
+  <duration>        30         </duration>
+  <rate>                80     </rate>
+  <period>        1000             </period>
+  <end>         510000           </end>
+</InjectionStim>
+
+</StimulationSet>
