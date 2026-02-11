@@ -1,0 +1,45 @@
+<StimulationSet>
+
+  <!--onset and duration in ms, rate in particles/ms-->
+    
+<InjectionStim specieID="CaNCamCa4" injectionSite="pointA">
+    <onset>               30000          </onset>
+        <duration>        1         </duration> 
+       	<rate>               1      </rate>
+      	<period>        1000             </period>
+	<end>          60000           </end>
+</InjectionStim>
+
+<InjectionStim specieID="buff_CaN" injectionSite="pointA">
+    <onset>               90000          </onset>
+        <duration>        1         </duration> 
+       	<rate>              32      </rate>
+      	
+</InjectionStim>
+
+
+
+<InjectionStim specieID="RacPAK" injectionSite="pointA">
+    <onset>               30000          </onset>
+        <duration>        1         </duration> 
+       	<rate>               0.1      </rate>
+      	<period>        1000             </period>
+	<end>          40000           </end>
+</InjectionStim>
+
+<InjectionStim specieID="RacPAK" injectionSite="pointA">
+    <onset>               40000          </onset>
+        <duration>        1         </duration> 
+       	<rate>               3.5    </rate>
+      	<period>        1000             </period>
+	<end>          88000           </end>
+</InjectionStim>
+
+<InjectionStim specieID="buff_Rac" injectionSite="pointA">
+    <onset>               90000          </onset>
+        <duration>        1         </duration> 
+       	<rate>               85      </rate>
+      
+</InjectionStim>
+
+</StimulationSet>

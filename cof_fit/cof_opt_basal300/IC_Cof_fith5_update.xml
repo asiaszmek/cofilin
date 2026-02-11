@@ -1,0 +1,43 @@
+<InitialConditions>
+  <ConcentrationSet>
+    <NanoMolarity specieID="PP1" value="996.323" />
+    <NanoMolarity specieID="Y" value="0.0" />
+    
+    <NanoMolarity specieID="pKal" value="0.0" />
+    <NanoMolarity specieID="Kal" value="958.961" />
+    <NanoMolarity specieID="Gap" value="1000.475" />
+    <NanoMolarity specieID="RacGap" value="0.0" />
+    <NanoMolarity specieID="RacGTP" value="0.0" />
+    <NanoMolarity specieID="RacGDP" value="817.498" />
+    <NanoMolarity specieID="pKalRac" value="0.0" />
+    
+    <NanoMolarity specieID="PAK" value="1884.394" />
+    <NanoMolarity specieID="RacPAK" value="0.139" />
+    
+    
+    <NanoMolarity specieID="RacPAKLIMK" value="70.751" />
+    <NanoMolarity specieID="pLIMK" value="12.532" />
+    <NanoMolarity specieID="LIMK" value="2060.208" />
+    <NanoMolarity specieID="SSHpLIMK" value="8.67" />
+
+    <NanoMolarity specieID="CaNCamCa4" value="0.292" />
+     <NanoMolarity specieID="CaNCamCa4pSSH" value="12.162" />
+    <NanoMolarity specieID="RacPAKSSH" value="0.0" />
+    <NanoMolarity specieID="pSSH" value="420.177" />
+    <NanoMolarity specieID="SSH" value="1414.657" />
+    
+    
+    <NanoMolarity specieID="pLIMKCof" value="39.751" /> 
+    <NanoMolarity specieID="Cof" value="317.705" />
+    <NanoMolarity specieID="pCof" value="1087.789" />
+    <NanoMolarity specieID="SSHpCof" value="394.365" />
+
+
+    <NanoMolarity specieID="actin" value="19918.725" />
+    <NanoMolarity specieID="Cofactin" value="78.313" />
+
+ 
+    
+  </ConcentrationSet>
+   
+</InitialConditions>

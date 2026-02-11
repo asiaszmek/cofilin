@@ -34,9 +34,9 @@ So the "io file" will be dependent on information stated in the
   <OutputSpecie name="Cof"/>
   <OutputSpecie name="pCof"/>
   <OutputSpecie name="Cam"/>
-  <OutputSpecie name="CaN"/>
   <OutputSpecie name="CamCa2C"/>
   <OutputSpecie name="CamCa2N"/>
+  <OutputSpecie name="CaN"/>
   <OutputSpecie name="CaNCam"/>
   <OutputSpecie name="CaNCamCa2C"/>
   <OutputSpecie name="CaNCamCa2N"/>
@@ -82,12 +82,14 @@ So the "io file" will be dependent on information stated in the
   <OutputSpecie name="PKAcppLR"/>
   <OutputSpecie name="pLR"/>
   <OutputSpecie name="ppLR"/>
+  <OutputSpecie name="ppLRGi"/>
   <OutputSpecie name="GsR"/>
   <OutputSpecie name="GasGTP"/>
   <OutputSpecie name="GasGDP"/>
   <OutputSpecie name="Gsbg"/>
-  <OutputSpecie name="LRGsbg"/>
   <OutputSpecie name="cAMP"/>
+  <OutputSpecie name="EpacAMP"/>
+  <OutputSpecie name="Epac"/>
   <OutputSpecie name="AMP"/>
   <OutputSpecie name="AC1"/>
   <OutputSpecie name="AC1GasGTP"/>
@@ -109,7 +111,10 @@ So the "io file" will be dependent on information stated in the
   <OutputSpecie name="PKA"/>
   <OutputSpecie name="PKAc"/>
   <OutputSpecie name="PKAr"/>
-  <OutputSpecie name="KalPKAc"/>
+  <OutputSpecie name="PDE1CamCa4"/>
+  <OutputSpecie name="PDE1CamCa4cAMP"/>
+  <OutputSpecie name="RCapGDP"/>
+  <OutputSpecie name="SCappSSH"/>
   
   <OutputSpecie name="actin"/>
   <OutputSpecie name="Cofactin"/>

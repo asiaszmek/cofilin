@@ -115,7 +115,6 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
   <Specie name="GaiGDP" id="GaiGDP" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="Gibg" id="Gibg" kdiff="0" kdiffunit="mu2/s"/>
   <Specie name="Gsbg" id="Gsbg" kdiff="0" kdiffunit="mu2/s"/>
-  <Specie name="LRGsbg" id="LRGsbg" kdiff="0" kdiffunit="mu2/s"/>
   
   <Specie name="cAMP"     id="cAMP"     kdiff="86.4"     kdiffunit="mu2/s"/>
   <Specie name="AMP"       id="AMP"      kdiff="84.8" kdiffunit="mu2/s"/>

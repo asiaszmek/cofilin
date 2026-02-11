@@ -1,0 +1,311 @@
+<ReactionScheme>
+  <!-- fit 662 -->
+<!-- First version of merges Gq Gs coupled pathway reactions
+     when reactions differ between the models, notes indicate which was source.
+     Either StriatumCRCNS/StochasticSP1/MSPNfinalxml/MSPNreactions_4spine_new50.xml for Gs
+     or MURI/BoHung/FinalMarch2012/mglu_2ag_reac12mar20desens025.xml for Gq
+phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32-->
+
+<!-- Molecules species and diffusion constants -->
+<!-- Cofilin signaling pathway reaction subset -->
+<Specie name="PP1" id="PP1" kdiff="0.0" kdiffunit="mu2/s"/>
+<Specie name="pKalPP1" id="pKalPP1" kdiff="0.0" kdiffunit="mu2/s"/>
+<Specie name="pKal" id="pKal" kdiff="0.0" kdiffunit="mu2/s"/>
+<Specie name="Kal" id="Kal" kdiff="0.0" kdiffunit="mu2/s"/>
+<Specie name="pKalRac" id="pKalRac" kdiff="0.0" kdiffunit="mu2/s"/>
+
+<!-- Rac pathway -->
+<Specie name="RacGTP" id="RacGTP" kdiff="0.25" kdiffunit="mu2/s"/>
+<Specie name="RacGDP" id="RacGDP" kdiff="0" kdiffunit="mu2/s"/>
+<Specie name="RacGap" id="RacGap" kdiff="0" kdiffunit="mu2/s"/>
+<Specie name="Gap" id="Gap" kdiff="6.8" kdiffunit="mu2/s"/>
+
+<!-- PAK pathway -->
+<Specie name="PAK" id="PAK" kdiff="7.1" kdiffunit="mu2/s"/>
+<Specie name="RacPAKLIMK" id="RacPAKLIMK" kdiff="0" kdiffunit="mu2/s"/>
+<Specie name="RacPAK" id="RacPAK" kdiff="0.0" kdiffunit="mu2/s"/>
+
+<!-- LIMK pathway -->
+<Specie name="LIMK" id="LIMK" kdiff="6.7" kdiffunit="mu2/s"/>
+<Specie name="pLIMK" id="pLIMK" kdiff="6.7" kdiffunit="mu2/s"/>
+<Specie name="SSHpLIMK" id="SSHpLIMK" kdiff="0" kdiffunit="mu2/s"/>
+
+<!-- SSH pathway -->
+<Specie name="pSSH" id="pSSH" kdiff="0.0" kdiffunit="mu2/s"/>
+<Specie name="SSH" id="SSH" kdiff="0.0" kdiffunit="mu2/s"/>
+<Specie name="RacPAKSSH" id="RacPAKSSH" kdiff="0" kdiffunit="mu2/s"/>
+<Specie name="CaNCamCa4pSSH" id="CaNCamCa4pSSH" kdiff="0" kdiffunit="mu2/s"/>
+<Specie name="Y" id="Y" kdiff="0.0" kdiffunit="mu2/s"/>
+<Specie name="YCaNCamCa4" id="YCaNCamCa4" kdiff="0.0" kdiffunit="mu2/s"/>
+
+<!-- CaN pathway -->
+
+<Specie name="CaNCamCa4" id="CaNCamCa4" kdiff="0" kdiffunit="mu2/s"/>
+
+<!-- Cof pathway -->
+<Specie name="Cof" id="Cof" kdiff="0.01" kdiffunit="mu2/s"/>
+<Specie name="pCof" id="pCof" kdiff="0.01" kdiffunit="mu2/s"/>
+<Specie name="pLIMKCof" id="pLIMKCof" kdiff="0" kdiffunit="mu2/s"/>
+<Specie name="SSHpCof" id="SSHpCof" kdiff="0" kdiffunit="mu2/s"/>
+
+<!-- actin binding to Cof -->    
+<Specie name="actin" id="actin" kdiff="0" kdiffunit="mu2/s"/>
+<Specie name="Cofactin" id="Cofactin" kdiff="0" kdiffunit="mu2/s"/>
+
+
+<!--****************************************************************************
+Now, the reactions themselves
+****************************************************************************-->
+
+    
+<!--Y+CaNCamCa4<->YCaNCamCa4-->
+<Reaction id="Y--YCaNCamCa4" name="Y+CaNCamCa4--YCaNCamCa4">
+<Reactant specieID="CaNCamCa4"/>
+<Reactant specieID="Y"/>
+<Product specieID="YCaNCamCa4"/>
+
+<forwardRate> 0.1e-9 </forwardRate>
+<reverseRate> 0 </reverseRate>
+
+</Reaction>
+
+<!--PP1 inactivates Kal -->
+<!--PP1+Kal<->PP1 +pKal-->
+<Reaction id="pKal+PP1--pKalPP1" name="pKal+PP1--pKalPP1">
+<Reactant specieID="pKal"/>
+<Reactant specieID="PP1"/>
+<Product specieID="pKalPP1"/>
+
+<!--forwardRate> 0</forwardRate-->
+<forwardRate> 0.00005e-3 </forwardRate>
+<reverseRate> 0.04e-3 </reverseRate>
+
+</Reaction>
+<Reaction id="pKalPP1--Kal+PP1" name="pKalPP1--Kal+PP1">
+<Reactant specieID="pKalPP1"/>
+<Product specieID="PP1"/>
+<Product specieID="Kal"/>
+
+<forwardRate> 0.01e-3 </forwardRate>
+<reverseRate> 0 </reverseRate>
+
+</Reaction>
+
+
+<!--RacGDP+ pKal<->RacGTP + pKal-->
+<Reaction id="RacGDP+Kal--pKalRacGDP" name="RacGDP+pKal--pKalRacGDP">
+<Reactant specieID="pKal"/>
+<Reactant specieID="RacGDP"/>
+<Product specieID="pKalRac"/>
+
+<forwardRate>8.433391345599629e-08</forwardRate>
+<reverseRate>0.00010938397236705715</reverseRate>
+
+</Reaction>
+
+<Reaction id="pKalRacGDP--pKal+RacGTP" name="pKalRacGDP--pKal+RacGTP">
+<Reactant specieID="pKalRac"/>
+<Product specieID="RacGTP"/>
+<Product specieID="pKal"/>
+
+<forwardRate>2.7345993091764286e-05</forwardRate>
+<reverseRate> 0 </reverseRate>
+
+</Reaction>
+
+
+<!--RacGTP inactivation -->
+<!--RacGTP+ Gap<->RacGDP + Gap-->
+<Reaction id="RacGTP+Gap--GapRacGTP" name="RacGTP+Gap--GapRacGTP">
+<Reactant specieID="Gap"/>
+<Reactant specieID="RacGTP"/>
+<Product specieID="RacGap"/>
+
+
+<!--forwardRate> 0</forwardRate-->
+<forwardRate> 0.00022e-3 </forwardRate>
+<reverseRate> 4.82e-3</reverseRate>
+
+</Reaction>
+
+<Reaction id="GapRacGTP--RacGDP+Gap" name="GapRacGTP--RacGDP+Gap">
+<Reactant specieID="RacGap"/>
+<Product specieID="RacGDP"/>
+<Product specieID="Gap"/>
+
+<forwardRate> 1.205e-3 </forwardRate>
+<reverseRate> 0 </reverseRate>
+
+</Reaction>
+
+
+<!--RacGTP activate PAK-->
+<!--RacGTP+PAK <->RacPAK-->
+<Reaction id="RacGTP+PAK--RacGTPPAK" name="RacGTP+PAK--RacGTPPAK">
+<Reactant specieID="PAK"/>
+<Reactant specieID="RacGTP"/>
+<Product specieID="RacPAK"/>
+
+<!--forwardRate> 0</forwardRate-->
+<forwardRate>0.009432854292459061e-3</forwardRate>
+<reverseRate>0.0008193895275525956</reverseRate>
+
+</Reaction>
+
+<!-- intrinsic inactivation of PAK-->
+<!--RacPAK<->RacGDP+PAK-->
+<Reaction id="RacPAK--RacGDP+PAK" name="RacPAK--RacGDP+PAK">
+<Reactant specieID="RacPAK"/>
+<Product specieID="RacGDP"/>
+<Product specieID="PAK"/>
+
+<!--forwardRate> 0</forwardRate-->
+<forwardRate>4.6764115604291607e-07</forwardRate>
+<reverseRate>0</reverseRate>
+
+</Reaction>
+
+
+
+<!--LIMK activated by PAK-->
+<!--PAK+LIMK <->pLIMK+PAK-->
+<Reaction id="RacPAK+LIMK--LIMKRacPAK" name="RacPAK+LIMK--LIMKRacPAK">
+<Reactant specieID="RacPAK"/>
+<Reactant specieID="LIMK"/>
+<Product specieID="RacPAKLIMK"/>
+
+<forwardRate>0.10285996216847572e-3</forwardRate>
+<reverseRate>0.3332051140000555</reverseRate>
+
+</Reaction>
+
+<Reaction id="LIMKRacPAK--RacPAK+pLIMK" name="LIMKRacPAK--RacPAK+pLIMK">
+<Reactant specieID="RacPAKLIMK"/>
+<Product specieID="pLIMK"/>
+<Product specieID="RacPAK"/>
+
+<forwardRate>0.08330127850001387</forwardRate>
+<reverseRate> 0 </reverseRate>
+
+</Reaction>
+
+
+<!--SSH inactivation LIMK-->
+<!--pLIMK+SSH <->SSH+LIMK-->
+<Reaction id="pLIMK+SSH--SSHpLIMK" name="pLIMK+SSH--SSHpLIMK">
+<Reactant specieID="pLIMK"/>
+<Reactant specieID="SSH"/>
+<Product specieID="SSHpLIMK"/>
+
+<forwardRate>0.001674933480062984</forwardRate>
+<reverseRate>2.7767899714998356</reverseRate>
+
+</Reaction>
+
+
+<Reaction id="SSHpLIMK--pLIMK+SSH" name="SSHpLIMK--pLIMK+SSH">
+<Reactant specieID="SSHpLIMK"/>
+<Product specieID="SSH"/>
+<Product specieID="LIMK"/>
+
+<forwardRate>0.6941974928749589</forwardRate>
+<reverseRate> 0 </reverseRate>
+</Reaction>
+
+<!-- CaN activate SSH-->
+<!--  CaNCam+pSSH <->CaNCam+SSH       -->
+<Reaction name="CaNCamCa4+pSSH--CaNCamCa4pSSH" id="CaNCamCa4+pSSH--CaNCamCa4pSSH">
+        <Reactant specieID="pSSH"/>
+        <Reactant specieID="CaNCamCa4"/>
+        <Product specieID="CaNCamCa4pSSH"/>
+
+        <forwardRate>4.894189636080237e-05</forwardRate>
+        <reverseRate>0.00048469227061847473</reverseRate>
+</Reaction>
+
+<!--  CaNCam+pSSH <->CaNCam+SSH       -->
+<Reaction name="CaNCamCa4pSSH--SSH+CaNCamCa4" id="CaNCamCa4pSSH--SSH+CaNCamCa4">
+        <Reactant specieID="CaNCamCa4pSSH"/>
+        <Product specieID="CaNCamCa4"/>
+        <Product specieID="SSH"/>
+	
+        <forwardRate>0.00012117306765461868</forwardRate>
+        <reverseRate> 0 </reverseRate>
+</Reaction>
+
+<!--PAK inactivate SSH through phosphorylation-->
+<Reaction id="RacPAK+SSH--SSHRacPAK" name="RacPAK+SSH--SSHRacPAK">
+<Reactant specieID="RacPAK"/>
+<Reactant specieID="SSH"/>
+<Product specieID="RacPAKSSH"/>
+
+
+<forwardRate>0.10285996216847572e-3</forwardRate>
+<reverseRate>0.3332051140000555</reverseRate>
+
+</Reaction>
+
+<Reaction id="SSHRacPAK--pSSH+RacPAK" name="SSHRacPAK--pSSH+RacPAK">
+<Reactant specieID="RacPAKSSH"/>
+<Product specieID="pSSH"/>
+<Product specieID="RacPAK"/>
+
+<forwardRate>0.08330127850001387</forwardRate>
+<reverseRate> 0 </reverseRate>
+
+</Reaction>
+
+<!--LIMK inactivation Cof-->
+<!--Cof+pLIMK <->pLIMK+pCof-->
+<Reaction id="Cof+pLIMK--pLIMKCof" name="Cof+pLIMK--pLIMKCof">
+<Reactant specieID="Cof"/>
+<Reactant specieID="pLIMK"/>
+<Product specieID="pLIMKCof"/>
+
+<forwardRate>0.0110813186850947</forwardRate>
+<reverseRate>0.8674788811734045</reverseRate>
+
+</Reaction>
+
+<Reaction id="pLIMKCof--pCof+pLIMK" name="pLIMKCof--pCof+pLIMK">
+<Reactant specieID="pLIMKCof"/>
+<Product specieID="pLIMK"/>
+<Product specieID="pCof"/>
+
+<forwardRate>0.21686972029335114</forwardRate>
+<reverseRate> 0 </reverseRate>
+</Reaction>
+
+
+<!--SSH activation Cof-->
+<!--Cof+SSH <->SSH+pCof-->
+<Reaction id="pCof+SSH--SSHpCof" name="pCof+SSH--SSHpCof">
+<Reactant specieID="pCof"/>
+<Reactant specieID="SSH"/>
+<Product specieID="SSHpCof"/>
+
+<forwardRate>2.7994650783268468e-03</forwardRate>
+<reverseRate>0.08739025621708388</reverseRate>
+
+</Reaction>
+
+<Reaction id="SSHpCof--Cof+SSH" name="pCof+SSH--Cof+SSH">
+<Reactant specieID="SSHpCof"/>
+<Product specieID="SSH"/>
+<Product specieID="Cof"/>
+
+<forwardRate>0.2184756405427097</forwardRate>
+<reverseRate> 0 </reverseRate>
+</Reaction>
+
+<!--Actin binding to Cof -->
+<Reaction id="actin+Cof--Cofactin" name="actin+Cof--Cofactin">
+<Reactant specieID="actin"/>
+<Reactant specieID="Cof"/>
+<Product specieID="Cofactin"/>
+
+<forwardRate>1.1957665076073118e-07</forwardRate>
+<reverseRate>0.009362762571712258</reverseRate>
+</Reaction>
+
+</ReactionScheme>

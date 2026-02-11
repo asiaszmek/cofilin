@@ -6,11 +6,13 @@
 
 	 reaction data brought in from other files --> 
 
-          <xi:include href="../Rxn_Cof-oldCam.xml" />
+          <!--xi:include href="../Rxn_Cof-oldCamSSHenh40_Kalslow2.xml" /-->
+          <xi:include href="../Rxn_Cof-oldCamI1PKA.xml" />
           <xi:include href="../Morph_dend_0.6um_spine1.xml" />        
-          <xi:include href="../IC_Cofh5_update_PKAKOh5_update_PKAKO-oldCam.xml" />
+          <xi:include href="../IC_Cof_PKAKO_oldCamh5_updateI1PKA.xml" />
+          <!--xi:include href="../IC_Cof_PKAKO_oldCamh5_updateNEW.xml" /-->
           <xi:include href="../Out_Cof.xml" />
-	  <xi:include href="../Stim_Cof-HFS-ISO.xml" />
+	  <xi:include href="../Stim_Cof-HFS-ISO_PKA.xml" />
 	   
     <!--2D means the morphology is interpreted like a flatworm, 3D for
 
@@ -45,7 +47,7 @@ results. depth 2D units are microns  -->
 
     </discretization>
 
-    <outputInterval>      20.0   </outputInterval>
+    <outputInterval>      200.0   </outputInterval>
 
     <!-- the tolerace is used for adaptive sims -->
 

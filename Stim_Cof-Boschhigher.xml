@@ -1,0 +1,60 @@
+<StimulationSet>
+
+  <!--onset and duration in ms, rate in particles/ms-->
+    
+
+ <!--Ca -->
+<!-- part 1 -->
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+           <onset>               301800          </onset>
+        <duration>        1         </duration> 
+       	<rate>           20000      </rate>
+      	<period>        1000             </period>
+	<end>          361800           </end>
+</InjectionStim>
+
+
+<InjectionStim specieID="Ca" injectionSite="dend:submembrane">
+           <onset>               301800          </onset>
+        <duration>        1         </duration> 
+       	<rate>               2200     </rate>
+      	<period>        1000             </period>
+	<end>          361800           </end>
+</InjectionStim>
+
+<!-- part 2 -->
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+           <onset>               361800          </onset>
+        <duration>        1         </duration> 
+       	<rate>           2000      </rate>
+      	<period>        1000             </period>
+	<end>          391800           </end>
+</InjectionStim>
+
+
+<InjectionStim specieID="Ca" injectionSite="dend:submembrane">
+           <onset>               361800          </onset>
+        <duration>        1         </duration> 
+       	<rate>               220     </rate>
+      	<period>        1000             </period>
+	<end>          391800           </end>
+</InjectionStim>
+
+ <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+           <onset>               391800          </onset>
+        <duration>        1         </duration> 
+       	<rate>           200      </rate>
+      	<period>        1000             </period>
+	<end>          421800           </end>
+</InjectionStim>
+
+
+<InjectionStim specieID="Ca" injectionSite="dend:submembrane">
+           <onset>               391800          </onset>
+        <duration>        1         </duration> 
+       	<rate>               22     </rate>
+      	<period>        1000             </period>
+	<end>          421800           </end>
+</InjectionStim>
+
+</StimulationSet>

@@ -1,0 +1,200 @@
+
+
+<ReactionScheme>
+  <!-- fit 662 -->
+<!-- First version of merges Gq Gs coupled pathway reactions
+     when reactions differ between the models, notes indicate which was source.
+     Either StriatumCRCNS/StochasticSP1/MSPNfinalxml/MSPNreactions_4spine_new50.xml for Gs
+     or MURI/BoHung/FinalMarch2012/mglu_2ag_reac12mar20desens025.xml for Gq
+phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32-->
+
+<!-- Molecules species and diffusion constants -->
+
+<!-- PAK pathway -->
+<Specie name="RacPAK" id="RacPAK" kdiff="0.0" kdiffunit="mu2/s" />
+<Specie name="X" id="X" kdiff="0.0" kdiffunit="mu2/s" />
+<Specie name="XRacPAK" id="XRacPAK" kdiff="0.0" kdiffunit="mu2/s" />
+
+<!-- LIMK pathway -->
+<Specie name="LIMK" id="LIMK" kdiff="6.7" kdiffunit="mu2/s"/>
+<Specie name="pLIMK" id="pLIMK" kdiff="6.7" kdiffunit="mu2/s" />
+<Specie name="SSHpLIMK" id="SSHpLIMK" kdiff="0"  kdiffunit="mu2/s"/>
+<Specie name="RacPAKLIMK" id="RacPAKLIMK" kdiff="0" kdiffunit="mu2/s"  />
+
+<!-- SSH pathway -->
+<Specie name="pSSH"        id="pSSH"       kdiff="0.0"     kdiffunit="mu2/s"/>
+<Specie name="SSH" id="SSH" kdiff="0.0" kdiffunit="mu2/s"/>
+<Specie name="RacPAKSSH" id="RacPAKSSH" kdiff="0" kdiffunit="mu2/s"/>
+<Specie name="CaNCamCa4pSSH"        id="CaNCamCa4pSSH"       kdiff="0"     kdiffunit="mu2/s"/>
+<Specie name="CaNCamCa4"        id="CaNCamCa4"       kdiff="0"     kdiffunit="mu2/s"/>
+<Specie name="Y" id="Y" kdiff="0.0" kdiffunit="mu2/s" />
+<Specie name="YCaNCamCa4" id="YCaNCamCa4" kdiff="0.0" kdiffunit="mu2/s" />
+
+<!-- Cof pathway -->
+<Specie name="Cof" id="Cof" kdiff="0.01" kdiffunit="mu2/s"  />
+<Specie name="pCof" id="pCof"  kdiff="0.01" kdiffunit="mu2/s"/>
+<Specie name="pLIMKCof" id="pLIMKCof"  kdiff="0" kdiffunit="mu2/s"/>
+<Specie name="SSHpCof" id="SSHpCof" kdiff="0" kdiffunit="mu2/s"/>
+
+
+<!--****************************************************************************
+Now, the reactions themselves
+****************************************************************************-->
+
+<!--X+RacPAK<->XRacPAK-->
+<Reaction id="X--XRacPAK" name="X+RacPAK--XRacPAK">
+<Reactant specieID="RacPAK"/>
+<Reactant specieID="X"/>
+<Product specieID="XRacPAK"/>
+
+<forwardRate> 0.1e-6 </forwardRate>
+<reverseRate> 0 </reverseRate>
+</Reaction>
+
+<!--Y+CaNCamCa4<->YCaNCamCa4-->
+<Reaction id="Y--YCaNCamCa4" name="Y+CaNCamCa4--YCaNCamCa4">
+<Reactant specieID="CaNCamCa4"/>
+<Reactant specieID="Y"/>
+<Product specieID="YCaNCamCa4"/>
+
+<forwardRate> 0.1e-6 </forwardRate>
+<reverseRate> 0 </reverseRate>
+
+</Reaction>
+
+
+
+
+<!--LIMK activated by PAK-->
+<!--PAK+LIMK <->pLIMK+PAK-->
+<Reaction id="RacPAK+LIMK--LIMKRacPAK" name="RacPAK+LIMK--LIMKRacPAK">
+<Reactant specieID="RacPAK"/>
+<Reactant specieID="LIMK"/>
+<Product specieID="RacPAKLIMK"/>
+
+<forwardRate>0.0191144 </forwardRate>
+<reverseRate> 1e-12 </reverseRate>
+
+</Reaction>
+
+<Reaction id="LIMKRacPAK--RacPAK+pLIMK" name="LIMKRacPAK--RacPAK+pLIMK">
+<Reactant specieID="RacPAKLIMK"/>
+<Product specieID="pLIMK"/>
+<Product specieID="RacPAK"/>
+
+<forwardRate>2.33938 </forwardRate>
+<reverseRate> 0 </reverseRate>
+
+</Reaction>
+
+
+<!--SSH inactivation LIMK-->
+<!--pLIMK+SSH <->SSH+LIMK-->
+<Reaction id="pLIMK+SSH--SSHpLIMK" name="pLIMK+SSH--SSHpLIMK">
+<Reactant specieID="pLIMK"/>
+<Reactant specieID="SSH"/>
+<Product specieID="SSHpLIMK"/>
+
+<forwardRate> 0.000600583 </forwardRate>
+<reverseRate> 0.00021423 </reverseRate>
+
+</Reaction>
+
+
+<Reaction id="SSHpLIMK--pLIMK+SSH" name="SSHpLIMK--pLIMK+SSH">
+<Reactant specieID="SSHpLIMK"/>
+<Product specieID="SSH"/>
+<Product specieID="LIMK"/>
+
+<forwardRate> 0.337446 </forwardRate>
+<reverseRate> 0 </reverseRate>
+</Reaction>
+
+<!-- CaN activate SSH-->
+<!--  CaNCam+pSSH <->CaNCam+SSH       -->
+<Reaction name="CaNCamCa4+pSSH--CaNCamCa4pSSH" id="CaNCamCa4+pSSH--CaNCamCa4pSSH">
+        <Reactant specieID="pSSH"/>
+        <Reactant specieID="CaNCamCa4"/>
+        <Product specieID="CaNCamCa4pSSH"/>
+
+        <forwardRate>  1.69154e-6 </forwardRate>
+        <reverseRate> 3.32867e-5 </reverseRate>
+</Reaction>
+
+<!--  CaNCam+pSSH <->CaNCam+SSH       -->
+<Reaction name="CaNCamCa4pSSH--SSH+CaNCamCa4" id="CaNCamCa4pSSH--SSH+CaNCamCa4">
+        <Reactant specieID="CaNCamCa4pSSH"/>
+        <Product specieID="CaNCamCa4"/>
+        <Product specieID="SSH"/>
+	
+        <forwardRate>0.0109215 </forwardRate>
+        <reverseRate> 0 </reverseRate>
+</Reaction>
+
+<!--PAK inactivate SSH through phosphorylation-->
+<Reaction id="RacPAK+SSH--SSHRacPAK" name="RacPAK+SSH--SSHRacPAK">
+<Reactant specieID="RacPAK"/>
+<Reactant specieID="SSH"/>
+<Product specieID="RacPAKSSH"/>
+
+<forwardRate> 4.30563e-7 </forwardRate>
+<reverseRate> 0.275724  </reverseRate>
+</Reaction>
+
+<Reaction id="SSHRacPAK--pSSH+RacPAK" name="SSHRacPAK--pSSH+RacPAK">
+<Reactant specieID="RacPAKSSH"/>
+<Product specieID="pSSH"/>
+<Product specieID="RacPAK"/>
+
+<forwardRate> 2.22113e-5 </forwardRate>
+<reverseRate> 0 </reverseRate>
+
+</Reaction>
+
+<!--LIMK inactivation Cof-->
+<!--Cof+pLIMK <->pLIMK+pCof-->
+<Reaction id="Cof+pLIMK--pLIMKCof" name="Cof+pLIMK--pLIMKCof">
+<Reactant specieID="Cof"/>
+<Reactant specieID="pLIMK"/>
+<Product specieID="pLIMKCof"/>
+
+<forwardRate> 9.6972e-5 </forwardRate>
+<reverseRate> 0.0741395 </reverseRate>
+
+</Reaction>
+
+<Reaction id="pLIMKCof--pCof+pLIMK" name="pLIMKCof--pCof+pLIMK">
+<Reactant specieID="pLIMKCof"/>
+<Product specieID="pLIMK"/>
+<Product specieID="pCof"/>
+
+<forwardRate> 0.00276918 </forwardRate>
+<reverseRate> 0 </reverseRate>
+</Reaction>
+
+
+<!--SSH activation Cof-->
+<!--Cof+SSH <->SSH+pCof-->
+<Reaction id="pCof+SSH--SSHpCof" name="pCof+SSH--SSHpCof">
+<Reactant specieID="pCof"/>
+<Reactant specieID="SSH"/>
+<Product specieID="SSHpCof"/>
+
+<forwardRate>1.71578e-5 </forwardRate>
+<reverseRate>5.78416 </reverseRate>
+
+</Reaction>
+
+<Reaction id="SSHpCof--Cof+SSH" name="pCof+SSH--Cof+SSH">
+<Reactant specieID="SSHpCof"/>
+<Product specieID="SSH"/>
+<Product specieID="Cof"/>
+
+<forwardRate>0.112397</forwardRate>
+<reverseRate> 0 </reverseRate>
+</Reaction>
+
+
+
+
+</ReactionScheme>

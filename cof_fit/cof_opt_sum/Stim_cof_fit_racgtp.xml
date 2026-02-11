@@ -1,0 +1,62 @@
+<StimulationSet>
+
+  <!--onset and duration in ms, rate in particles/ms-->
+   <InjectionStim specieID="CaNCamCa4" injectionSite="pointA">
+    <onset>               90000          </onset>
+        <duration>        1         </duration> 
+       	<rate>               0.15      </rate>
+      	<period>        100             </period>
+	<end>          100000           </end>
+</InjectionStim>
+
+<InjectionStim specieID="CaNCamCa4" injectionSite="pointA">
+    <onset>               100100          </onset>
+        <duration>        1         </duration> 
+       	<rate>               0.01      </rate>
+      	<period>        100             </period>
+	<end>          150000           </end>
+</InjectionStim>
+
+<InjectionStim specieID="Y" injectionSite="pointA">
+    <onset>               150000          </onset>
+        <duration>        1         </duration> 
+       	<rate>               10      </rate>
+      
+</InjectionStim>
+
+
+
+
+
+<InjectionStim specieID="pKal" injectionSite="pointA">
+    <onset>               100000          </onset>
+        <duration>        1         </duration> 
+       	<rate>              0.001      </rate>
+      	<period>        100             </period>
+	<end>          120000           </end>
+</InjectionStim>
+
+<InjectionStim specieID="pKal" injectionSite="pointA">
+    <onset>               120100          </onset>
+        <duration>        1         </duration> 
+       	<rate>               0.065      </rate>
+      	<period>        100             </period>
+	<end>          135000           </end>
+</InjectionStim>
+
+<InjectionStim specieID="pKal" injectionSite="pointA">
+    <onset>               135100          </onset>
+        <duration>        1         </duration> 
+       	<rate>              0.002      </rate>
+      	<period>        100             </period>
+	<end>          150000           </end>
+</InjectionStim>
+
+<InjectionStim specieID="X" injectionSite="pointA">
+    <onset>               152000          </onset>
+        <duration>        1         </duration> 
+       	<rate>               12.3      </rate>
+      
+</InjectionStim>
+
+</StimulationSet>

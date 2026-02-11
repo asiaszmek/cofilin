@@ -1,0 +1,53 @@
+<StimulationSet>
+
+  <!--onset and duration in ms, rate in particles/ms-->
+   <InjectionStim specieID="CaNCamCa4" injectionSite="pointA">
+    <onset>               90000          </onset>
+        <duration>        1         </duration> 
+       	<rate>               0.20      </rate>
+      	<period>        100             </period>
+	<end>          110000           </end>
+</InjectionStim>
+
+<InjectionStim specieID="CaNCamCa4" injectionSite="pointA">
+    <onset>               110100          </onset>
+        <duration>        1         </duration> 
+       	<rate>               0.015      </rate>
+      	<period>        100             </period>
+	<end>          150000           </end>
+</InjectionStim>
+
+<InjectionStim specieID="Y" injectionSite="pointA">
+    <onset>               150000          </onset>
+        <duration>        1000         </duration> 
+       	<rate>               0      </rate>
+      
+</InjectionStim>
+
+
+<InjectionStim specieID="pKal" injectionSite="pointA">
+    <onset>               110000          </onset>
+        <duration>        1         </duration> 
+       	<rate>              0.002      </rate>
+      	<period>        10             </period>
+	<end>          130000           </end>
+</InjectionStim>
+
+<InjectionStim specieID="pKal" injectionSite="pointA">
+    <onset>               130100          </onset>
+        <duration>        1         </duration> 
+       	<rate>               0.055      </rate>
+      	<period>        10             </period>
+	<end>          135000           </end>
+</InjectionStim>
+
+<InjectionStim specieID="pKal" injectionSite="pointA">
+    <onset>               145100          </onset>
+        <duration>        1         </duration> 
+       	<rate>              0.001      </rate>
+      	<period>        10             </period>
+	<end>          150000           </end>
+</InjectionStim>
+
+
+</StimulationSet>

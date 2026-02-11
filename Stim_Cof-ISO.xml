@@ -4,14 +4,14 @@
     
 
 <InjectionStim specieID="L" injectionSite="sa1[0].pointA">
-        <onset>200000</onset>
+        <onset>300000</onset>
         <duration>1000000</duration>
         <rate>0.30</rate>
 
 </InjectionStim>
 
 <InjectionStim specieID="L" injectionSite="dend:submembrane">
-        <onset>200000</onset>
+        <onset>300000</onset>
         <duration>1000000</duration>
         <rate>0.018</rate>
  

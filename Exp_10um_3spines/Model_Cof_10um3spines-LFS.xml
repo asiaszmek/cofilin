@@ -6,9 +6,9 @@
 
 	 reaction data brought in from other files --> 
 
-          <xi:include href="../Rxn_Cof-oldCam.xml" />
+          <xi:include href="../Rxn_Cof-oldCamI1PKA.xml" />
           <xi:include href="../Morph_10um_dend_spines.xml" />        
-          <xi:include href="../IC_Cofh5_updateh5_update-oldCam.xml" />
+          <xi:include href="../IC_Cof_ctrl_oldCamh5_updateI1PKA.xml" />
           <xi:include href="../Out_Cof.xml" />
 	  <xi:include href="../Stim_Cof-LFS.xml" />
 	   
@@ -45,7 +45,7 @@ results. depth 2D units are microns  -->
 
     </discretization>
 
-    <outputInterval>      20.0   </outputInterval>
+    <outputInterval>      200.0   </outputInterval>
 
     <!-- the tolerace is used for adaptive sims -->
 

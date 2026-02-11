@@ -3,14 +3,14 @@
   <!--onset and duration in ms, rate in particles/ms-->
  <!--Ligan -->
  <InjectionStim specieID="L" injectionSite="sa1[0].pointA">
-        <onset>200000</onset>
+        <onset>300000</onset>
         <duration>1000000</duration>
         <rate>0.30</rate>
 
 </InjectionStim>
 
 <InjectionStim specieID="L" injectionSite="dend:submembrane">
-        <onset>200000</onset>
+        <onset>300000</onset>
         <duration>1000000</duration>
         <rate>0.018</rate>
  
@@ -18,39 +18,48 @@
 
 
 
-  <!--Ca -->
+<!--Ca 20% INCREASE IN SPINE-->
+
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
-        <onset>               400000          </onset>
+        <onset>               500000          </onset>
         <duration>        1         </duration> 
-       	<rate>               1500      </rate>
+       	<!--rate>               1500      </rate-->
+	<rate>               600      </rate>
+</InjectionStim>
+
+<InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
+        <onset>               500002          </onset>
+        <duration>        1         </duration> 
+       	<rate>               720      </rate>
       	<period>        200             </period>
-	<end>          580000           </end>
+	<end>          680000           </end>
 </InjectionStim>
 
 
 <InjectionStim specieID="Ca" injectionSite="sa1[0].pointA">
-           <onset>               400002          </onset>
+  <onset>               500004          </onset>
         <duration>        3         </duration> 
-       	<rate>              100      </rate>
-      	<period>        200             </period>
-	<end>          580000           </end>
+       	<rate>              33.6 </rate>
+	<period>        200             </period>
+	<end>          680000           </end>
+
 </InjectionStim>
 
 <InjectionStim specieID="Ca" injectionSite="dend:submembrane">
-           <onset>               400000          </onset>
+           <onset>               500000          </onset>
         <duration>        1         </duration> 
-       	<rate>               200      </rate>
+       	<rate>               62.4      </rate>
       	<period>        200             </period>
-	<end>          580000           </end>
+	<end>          680000           </end>
 </InjectionStim>
 
 
 <InjectionStim specieID="Ca" injectionSite="dend:submembrane">
-        <onset>               400002  </onset>
+        <onset>              500002  </onset>
         <duration>        3         </duration> 
-       	<rate>               15      </rate>
+       	<rate>               4.8      </rate>
       	<period>        200             </period>
-	<end>          580000           </end>
+	<end>         680000           </end>
 </InjectionStim>
 
 
