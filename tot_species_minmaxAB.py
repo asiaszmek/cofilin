@@ -26,13 +26,14 @@ sub_species={'PKA':['PKA'],'PKAr':['PKA','PKAr','PKAcAMP2','PKAcAMP4'],
              'PP1':['PP1','Ip35PP1', 'pKalPP1','CKpPP1','CKpCamCa4PP1'],
              'I1':['Ip35','Ip35PP1','Ip35CaNCamCa4','Ip35PP1CaNCamCa4','I1']}
 ##phos=pka and ck, 
-tot_species=[ 'dualPKA_PAK','PKAphos','dualCK_PKA','CKtot','actCof']#, 'pCoftot','pLIMKall','LIMKall','totCofALL','totCof','RacPAK']# 'PKActot',
+tot_species=['dualPKA_PAK','PKAphos','dualCK_PKA','CKtot','actCof']# 'totCofALL','totCof']#, 'pCoftot','pLIMKall','LIMKall','totCofALL','totCof','RacPAK']# 'PKActot',
 #tot_species=['CK','totCofALL','LIMKtot','ssh','totRac','Kal','totPAK','CaN','Ng','PKAr','PKActot','actin','Gap','CK','PP1','I1','PDE4','Epac','Calbin', 'AC8', 'AC1', 'Gs','R','GasGTP','RCap','SCap'] #sum molecules to ensure totals are correct
 #tot_species=['pCoftot','pLIMKall','LIMKall']
 weight={}
 #signature molecules must be in tot_species or in molecules
 signature={'kinase':{'num':['CKtot','PKAphos','EpacAMP'],'denom':[]}, 'CK_PKA_PAK':{'num':['CKtot','PKAphos','dualPKA_PAK','dualCK_PKA'],'denom':[]},'cof_act':{'num':['actCof'],'denom':[]}}#,'CK_PKA':{'num':['CKtot','PKAphos','dualCK_PKA','EpacAMP'],'denom':[]}}
 #thresh keys must be regions in the morphology
+#add in sa1[1] and sa1[2] for 10um dendrite
 thresh={'kinase':{'dend':0.2,'dendsub':0.25,'sa1[0]':0.25},'CK_PKA_PAK':{'dend':0.2,'dendsub':0.2,'sa1[0]':0.2},'cof_act':{'dend':0.1,'dendsub':0.2,'sa1[0]':0.15}}#,'CK_PKA':{'dend':0.2,'dendsub':0.2,'sa1[0]':0.25}}
 #signature={}
 #thresh={}
@@ -102,16 +103,23 @@ min_max = {
 
 
 if __name__ == '__main__':
+    fail=False
     for key in signature.keys():
         if key in min_max:
             for nd in ['num','denom']:
                 for mol in signature[key][nd]:
                     if not mol in min_max[key][nd]:
                         print('key=',key,', mol',mol,'in sig, not in min_max[key][',nd,']')
+                        fail=True
         else:
             print('key=',key,'in signature, not in min_max - norm signature will fail')
+            fail=True
         if key not in thresh.keys():
             print('key=',key,'in signature dict, missing from thresh dictionary')
+            fail=True
     for key in thresh.keys():
         if key not in signature.keys():
             print('key=',key,'in thresh dict, missing from sig - plot_signature will fail')
+            fail=True
+    if fail==False:
+        print('signature and thresh are well defined')
