@@ -664,10 +664,10 @@ Now, the reactions themselves
 
 <!--LIMK inactivation Cof-->
 <!--Cof+pLIMK <->pLIMK+pCof-->
-<Reaction id="Cof+pLIMK--pLIMCKCof" name="Cof+pLIMK--pLIMCKCof">
+<Reaction id="Cof+pLIMK--pLIMKCof" name="Cof+pLIMK--pLIMKCof">
 <Reactant specieID="Cof"/>
 <Reactant specieID="pLIMK"/>
-<Product specieID="pLIMCKCof"/>
+<Product specieID="pLIMKCof"/>
 
 <forwardRate>3.61e-6</forwardRate>
 <reverseRate>0.014</reverseRate>
@@ -675,8 +675,8 @@ Now, the reactions themselves
 
 </Reaction>
 
-<Reaction id="pLIMCKCof--pCof+pLIMK" name="pLIMCKCof--pCof+pLIMK">
-<Reactant specieID="pLIMCKCof"/>
+<Reaction id="pLIMKCof--pCof+pLIMK" name="pLIMKCof--pCof+pLIMK">
+<Reactant specieID="pLIMKCof"/>
 <Product specieID="pLIMK"/>
 <Product specieID="pCof"/>
 
