@@ -257,7 +257,8 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
     <Specie name="CaNCam2N" id="CaNCam2N" kdiff="0.61" kdiffunit="mu2/s"/>
     <Specie name="CaNCam1C1N" id="CaNCam1C1N" kdiff="0.61" kdiffunit="mu2/s"/>
     <Specie name="CaNCam1C2N" id="CaNCam1C2N" kdiff="0.61" kdiffunit="mu2/s"/>
-    <Specie name="CaNCam2C1N" id="CaNCam2C1N" kdiff="0.61" kdiffunit="mu2/s"/>	
+    <Specie name="CaNCam2C1N" id="CaNCam2C1N" kdiff="0.61" kdiffunit="mu2/s"/>
+    <Specie name="CaNCamCa4" id="CaNCamCa4" kdiff="0.61" kdiffunit="mu2/s"/>
 <!-- Ligan -->
     <Specie name="L" id="L" kdiff="111.4" kdiffunit="mu2/s"/>
     <Specie name="LOut" id="LOut" kdiff="10" kdiffunit="mu2/s"/>
