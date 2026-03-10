@@ -334,10 +334,10 @@ Now, the reactions themselves
 <!--CamKII to Kal restore original rates-->
 <!--CamKII+Kal<->CamKII +pKal-->
 <!--part 1-->
-<Reaction id="Kal+CCKCamCa4--KalCCKCamCa4" name="Kal+CCKCamCa4--KalCCKCamCa4">
+<Reaction id="Kal+CKCamCa4--KalCKCamCa4" name="Kal+CKCamCa4--KalCKCamCa4">
 <Reactant specieID="Kal"/>
-<Reactant specieID="CCKCamCa4"/>
-<Product specieID="KalCCKCamCa4"/>
+<Reactant specieID="CKCamCa4"/>
+<Product specieID="KalCKCamCa4"/>
 
 <forwardRate>0.000015e-3</forwardRate>
 <reverseRate> 0.12e-3</reverseRate>
@@ -346,9 +346,9 @@ Now, the reactions themselves
 
 
 </Reaction>
-<Reaction id="KalCCKCamCa4--pKal+CCKCamCa4" name="KalCCKCamCa4--pKal+CCKCamCa4">
-<Reactant specieID="KalCCKCamCa4"/>
-<Product specieID="CCKCamCa4"/>
+<Reaction id="KalCKCamCa4--pKal+CKCamCa4" name="KalCKCamCa4--pKal+CKCamCa4">
+<Reactant specieID="KalCKCamCa4"/>
+<Product specieID="CKCamCa4"/>
 <Product specieID="pKal"/>
 
 <forwardRate> 0.03e-3 </forwardRate>
