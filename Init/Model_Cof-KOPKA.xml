@@ -5,7 +5,7 @@
     <!-- this file defines a single run of the calculation, using morphology and 
 
 	 reaction data brought in from other files --> 
-          <xi:include href="../Rxn_Cof-oldCamI1PKA.xml" />
+          <xi:include href="../Rxn_Cof-newCamCaNI1PKA.xml" />
           <xi:include href="../Morph_dend_0.6um_spine1.xml" />
 	  <!--xi:include href="IC_Cof_PKAKO_oldCam.xml" /--><!-- used for init sims using 1st set of params -->
           <xi:include href="../IC_Cof_PKAKO_oldCamh5_updateI1PKA.xml" /><!-- used for init sims using subsequent params -->
