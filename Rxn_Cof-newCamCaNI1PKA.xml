@@ -69,12 +69,12 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
     <Specie name="CalbinC" id="CalbinC" kdiff="9.3" kdiffunit="mu2/s"/>
     <Specie name="Cam" id="Cam" kdiff="11" kdiffunit="mu2/s"/>
     <Specie name="Cam1N" id="Cam1N" kdiff="11" kdiffunit="mu2/s"/>
-    <Specie name="Cam2N" id="Cam2N" kdiff="11" kdiffunit="mu2/s"/>
+    <Specie name="CamCa2N" id="CamCa2N" kdiff="11" kdiffunit="mu2/s"/>
     <Specie name="Cam1C" id="Cam1C" kdiff="11" kdiffunit="mu2/s"/>
     <Specie name="Cam1C1N" id="Cam1C1N" kdiff="11" kdiffunit="mu2/s"/>
     <Specie name="Cam1C2N" id="Cam1C2N" kdiff="11" kdiffunit="mu2/s"/>
-    <Specie name="Cam2C" id="Cam2C" kdiff="11" kdiffunit="mu2/s"/>
-    <Specie name="Cam2C1N" id="Cam2C1N" kdiff="11" kdiffunit="mu2/s"/>
+    <Specie name="CamCa2C" id="CamCa2C" kdiff="11" kdiffunit="mu2/s"/>
+    <Specie name="CamCa2C1N" id="CamCa2C1N" kdiff="11" kdiffunit="mu2/s"/>
     <Specie name="CamCa4" id="CamCa4" kdiff="11" kdiffunit="mu2/s"/>
 <!-- Cam from Gq files, with either C or N site binding first to CK and CaN -->
     
@@ -82,12 +82,12 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
     <Specie name="CKp" id="CKp" kdiff="4" kdiffunit="mu2/s"/>
     <Specie name="CKCam" id="CKCam" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKCam1N" id="CKCam1N" kdiff="0.017" kdiffunit="mu2/s"/>
-    <Specie name="CKCam2N" id="CKCam2N" kdiff="0.017" kdiffunit="mu2/s"/>
+    <Specie name="CKCamCa2N" id="CKCamCa2N" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKCam1C" id="CKCam1C" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKCam1C1N" id="CKCam1C1N" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKCam1C2N" id="CKCam1C2N" kdiff="0.017" kdiffunit="mu2/s"/>
-    <Specie name="CKCam2C" id="CKCam2C" kdiff="0.017" kdiffunit="mu2/s"/>
-    <Specie name="CKCam2C1N" id="CKCam2C1N" kdiff="0.017" kdiffunit="mu2/s"/>
+    <Specie name="CKCamCa2C" id="CKCamCa2C" kdiff="0.017" kdiffunit="mu2/s"/>
+    <Specie name="CKCamCa2C1N" id="CKCamCa2C1N" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKCamCa4" id="CKCamCa4" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKCamcomplex_0_0_0_1" id="CKCamcomplex_0_0_0_1" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKCamcomplex_0_0_0_2" id="CKCamcomplex_0_0_0_2" kdiff="0.017" kdiffunit="mu2/s"/>
@@ -136,12 +136,12 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
     <Specie name="CKCamcomplex_2_2_2_2" id="CKCamcomplex_2_2_2_2" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKpCam" id="CKpCam" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKpCam1N" id="CKpCam1N" kdiff="0.017" kdiffunit="mu2/s"/>
-    <Specie name="CKpCam2N" id="CKpCam2N" kdiff="0.017" kdiffunit="mu2/s"/>
+    <Specie name="CKpCamCa2N" id="CKpCamCa2N" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKpCam1C" id="CKpCam1C" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKpCam1C1N" id="CKpCam1C1N" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKpCam1C2N" id="CKpCam1C2N" kdiff="0.017" kdiffunit="mu2/s"/>
-    <Specie name="CKpCam2C" id="CKpCam2C" kdiff="0.017" kdiffunit="mu2/s"/>
-    <Specie name="CKpCam2C1N" id="CKpCam2C1N" kdiff="0.017" kdiffunit="mu2/s"/>
+    <Specie name="CKpCamCa2C" id="CKpCamCa2C" kdiff="0.017" kdiffunit="mu2/s"/>
+    <Specie name="CKpCamCa2C1N" id="CKpCamCa2C1N" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKpCamCa4" id="CKpCamCa4" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKpCamcomplex_0_0_0_0" id="CKpCamcomplex_0_0_0_0" kdiff="0.017" kdiffunit="mu2/s"/>
     <Specie name="CKpCamcomplex_0_0_0_1" id="CKpCamcomplex_0_0_0_1" kdiff="0.017" kdiffunit="mu2/s"/>
@@ -228,14 +228,14 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
     <Specie name="PP1"                                 id="PP1"               kdiff="0"    kdiffunit="mu2/s"/>
     <Specie name="CKpPP1" id="CKpPP1" kdiff="0" kdiffunit="mu2/s"/>
     <Specie name="CKpCamCa4PP1" id="CKpCamCa4PP1" kdiff="0" kdiffunit="mu2/s"/>
-    <Specie name="CKpCam2NPP1" id="CKpCam2NPP1" kdiff="0" kdiffunit="mu2/s"/>
-    <Specie name="CKpCam2CPP1" id="CKpCam2CPP1" kdiff="0" kdiffunit="mu2/s"/>
+    <Specie name="CKpCamCa2NPP1" id="CKpCamCa2NPP1" kdiff="0" kdiffunit="mu2/s"/>
+    <Specie name="CKpCamCa2CPP1" id="CKpCamCa2CPP1" kdiff="0" kdiffunit="mu2/s"/>
     
     <Specie name="CKpCam1NPP1" id="CKpCam1NPP1" kdiff="0" kdiffunit="mu2/s"/>
     <Specie name="CKpCam1CPP1" id="CKpCam1CCPP1" kdiff="0" kdiffunit="mu2/s"/>
     <Specie name="CKpCam1C1NPP1" id="CKpCam1C1NPP1" kdiff="0" kdiffunit="mu2/s"/>
     <Specie name="CKpCam1C2NPP1" id="CKpCam1C2NPP1" kdiff="0" kdiffunit="mu2/s"/>
-    <Specie name="CKpCam2C1NPP1" id="CKpCam2C1NPP1" kdiff="0" kdiffunit="mu2/s"/>
+    <Specie name="CKpCamCa2C1NPP1" id="CKpCamCa2C1NPP1" kdiff="0" kdiffunit="mu2/s"/>
     
     <Specie name="CKpCamPP1" id="CKpCamPP1" kdiff="0" kdiffunit="mu2/s"/>
     
@@ -253,11 +253,11 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
     <Specie name="CaNCam" id="CaNCam" kdiff="0.61" kdiffunit="mu2/s"/>
     <Specie name="CaNCam1C" id="CaNCam1C" kdiff="0.61" kdiffunit="mu2/s"/>
     <Specie name="CaNCam1N" id="CaNCam1N" kdiff="0.61" kdiffunit="mu2/s"/>
-    <Specie name="CaNCam2C" id="CaNCam2C" kdiff="0.61" kdiffunit="mu2/s"/>
-    <Specie name="CaNCam2N" id="CaNCam2N" kdiff="0.61" kdiffunit="mu2/s"/>
+    <Specie name="CaNCamCa2C" id="CaNCamCa2C" kdiff="0.61" kdiffunit="mu2/s"/>
+    <Specie name="CaNCamCa2N" id="CaNCamCa2N" kdiff="0.61" kdiffunit="mu2/s"/>
     <Specie name="CaNCam1C1N" id="CaNCam1C1N" kdiff="0.61" kdiffunit="mu2/s"/>
     <Specie name="CaNCam1C2N" id="CaNCam1C2N" kdiff="0.61" kdiffunit="mu2/s"/>
-    <Specie name="CaNCam2C1N" id="CaNCam2C1N" kdiff="0.61" kdiffunit="mu2/s"/>
+    <Specie name="CaNCamCa2C1N" id="CaNCamCa2C1N" kdiff="0.61" kdiffunit="mu2/s"/>
     <Specie name="CaNCamCa4" id="CaNCamCa4" kdiff="0.61" kdiffunit="mu2/s"/>
 <!-- Ligan -->
     <Specie name="L" id="L" kdiff="111.4" kdiffunit="mu2/s"/>
@@ -828,7 +828,7 @@ Now, the reactions themselves
   </Reaction>
   <Reaction name="reaction5" id="reaction5">
     <Reactant specieID="Ca"/>
-    <Reactant specieID="Cam2N"/>
+    <Reactant specieID="CamCa2N"/>
     <Product specieID="Cam1C2N"/>
     <forwardRate>2.137e-05</forwardRate>
     <reverseRate>0.0398</reverseRate>
@@ -836,14 +836,14 @@ Now, the reactions themselves
   <Reaction name="reaction7" id="reaction7">
     <Reactant specieID="Ca"/>
     <Reactant specieID="Cam1C"/>
-    <Product specieID="Cam2C"/>
+    <Product specieID="CamCa2C"/>
     <forwardRate>0.000955</forwardRate>
     <reverseRate>0.933</reverseRate>
   </Reaction>
   <Reaction name="reaction9" id="reaction9">
     <Reactant specieID="Ca"/>
     <Reactant specieID="Cam1C1N"/>
-    <Product specieID="Cam2C1N"/>
+    <Product specieID="CamCa2C1N"/>
     <forwardRate>0.000955</forwardRate>
     <reverseRate>0.933</reverseRate>
   </Reaction>
@@ -864,7 +864,7 @@ Now, the reactions themselves
   <Reaction name="reaction15" id="reaction15">
     <Reactant specieID="Ca"/>
     <Reactant specieID="Cam1N"/>
-    <Product specieID="Cam2N"/>
+    <Product specieID="CamCa2N"/>
     <forwardRate>0.00195</forwardRate>
     <reverseRate>3.63</reverseRate>
   </Reaction>
@@ -884,14 +884,14 @@ Now, the reactions themselves
   </Reaction>
   <Reaction name="reaction21" id="reaction21">
     <Reactant specieID="Ca"/>
-    <Reactant specieID="Cam2C"/>
-    <Product specieID="Cam2C1N"/>
+    <Reactant specieID="CamCa2C"/>
+    <Product specieID="CamCa2C1N"/>
     <forwardRate>0.010715</forwardRate>
     <reverseRate>794.328</reverseRate>
   </Reaction>
   <Reaction name="reaction23" id="reaction23">
     <Reactant specieID="Ca"/>
-    <Reactant specieID="Cam2C1N"/>
+    <Reactant specieID="CamCa2C1N"/>
     <Product specieID="CamCa4"/>
     <forwardRate>0.00195</forwardRate>
     <reverseRate>3.63</reverseRate>
@@ -924,7 +924,7 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction29" id="reaction29">
 <Reactant specieID="Ca"/>
-<Reactant specieID="CKCam2N"/>
+<Reactant specieID="CKCamCa2N"/>
 <Product specieID="CKCam1C2N"/>
 <forwardRate>0.00301220351758794</forwardRate>
 <reverseRate>0.033</reverseRate>
@@ -932,14 +932,14 @@ Now, the reactions themselves
 <Reaction name="reaction31" id="reaction31">
 <Reactant specieID="Ca"/>
 <Reactant specieID="CKCam1C"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <forwardRate>4.30944465638454E-05</forwardRate>
 <reverseRate>0.0027</reverseRate>
 </Reaction>
 <Reaction name="reaction33" id="reaction33">
 <Reactant specieID="Ca"/>
 <Reactant specieID="CKCam1C1N"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <forwardRate>3.89645994553762E-06</forwardRate>
 <reverseRate>0.0027</reverseRate>
 </Reaction>
@@ -960,7 +960,7 @@ Now, the reactions themselves
 <Reaction name="reaction39" id="reaction39">
 <Reactant specieID="Ca"/>
 <Reactant specieID="CKCam1N"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <forwardRate>0.000146937287311619</forwardRate>
 <reverseRate>0.033</reverseRate>
 </Reaction>
@@ -980,14 +980,14 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction45" id="reaction45">
 <Reactant specieID="Ca"/>
-<Reactant specieID="CKCam2C"/>
-<Product specieID="CKCam2C1N"/>
+<Reactant specieID="CKCamCa2C"/>
+<Product specieID="CKCamCa2C1N"/>
 <forwardRate>4.09311918527532E-05</forwardRate>
 <reverseRate>0.3</reverseRate>
 </Reaction>
 <Reaction name="reaction47" id="reaction47">
 <Reactant specieID="Ca"/>
-<Reactant specieID="CKCam2C1N"/>
+<Reactant specieID="CKCamCa2C1N"/>
 <Product specieID="CKCamCa4"/>
 <forwardRate>0.000228609625668449</forwardRate>
 <reverseRate>0.033</reverseRate>
@@ -1017,14 +1017,14 @@ Now, the reactions themselves
 <forwardRate>0.0031</forwardRate>
 </Reaction>
 <Reaction name="reaction53" id="reaction53">
-<Reactant specieID="Cam2N"/>
+<Reactant specieID="CamCa2N"/>
 <Reactant specieID="CK"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <forwardRate>1e-07</forwardRate>
 </Reaction>
 <Reaction name="reaction54" id="reaction54">
-<Reactant specieID="CKCam2N"/>
-<Product specieID="Cam2N"/>
+<Reactant specieID="CKCamCa2N"/>
+<Product specieID="CamCa2N"/>
 <Product specieID="CK"/>
 <forwardRate>0.0017</forwardRate>
 </Reaction>
@@ -1065,26 +1065,26 @@ Now, the reactions themselves
 <forwardRate>0.0019</forwardRate>
 </Reaction>
 <Reaction name="reaction61" id="reaction61">
-<Reactant specieID="Cam2C"/>
+<Reactant specieID="CamCa2C"/>
 <Reactant specieID="CK"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <forwardRate>9.2e-07</forwardRate>
 </Reaction>
 <Reaction name="reaction62" id="reaction62">
-<Reactant specieID="CKCam2C"/>
-<Product specieID="Cam2C"/>
+<Reactant specieID="CKCamCa2C"/>
+<Product specieID="CamCa2C"/>
 <Product specieID="CK"/>
 <forwardRate>0.0068</forwardRate>
 </Reaction>
 <Reaction name="reaction63" id="reaction63">
-<Reactant specieID="Cam2C1N"/>
+<Reactant specieID="CamCa2C1N"/>
 <Reactant specieID="CK"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <forwardRate>5.2e-06</forwardRate>
 </Reaction>
 <Reaction name="reaction64" id="reaction64">
-<Reactant specieID="CKCam2C1N"/>
-<Product specieID="Cam2C1N"/>
+<Reactant specieID="CKCamCa2C1N"/>
+<Product specieID="CamCa2C1N"/>
 <Product specieID="CK"/>
 <forwardRate>0.0038</forwardRate>
 </Reaction>
@@ -1114,14 +1114,14 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction69" id="reaction69">
 <Reactant specieID="CKCam"/>
-<Reactant specieID="CKCam2N"/>
+<Reactant specieID="CKCamCa2N"/>
 <Product specieID="CKCamcomplex_0_0_0_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction70" id="reaction70">
 <Reactant specieID="CKCamcomplex_0_0_0_2"/>
 <Product specieID="CKCam"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction71" id="reaction71">
@@ -1162,26 +1162,26 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction77" id="reaction77">
 <Reactant specieID="CKCam"/>
-<Reactant specieID="CKCam2C"/>
+<Reactant specieID="CKCamCa2C"/>
 <Product specieID="CKCamcomplex_0_0_2_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction78" id="reaction78">
 <Reactant specieID="CKCamcomplex_0_0_2_0"/>
 <Product specieID="CKCam"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction79" id="reaction79">
 <Reactant specieID="CKCam"/>
-<Reactant specieID="CKCam2C1N"/>
+<Reactant specieID="CKCamCa2C1N"/>
 <Product specieID="CKCamcomplex_0_0_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction80" id="reaction80">
 <Reactant specieID="CKCamcomplex_0_0_2_1"/>
 <Product specieID="CKCam"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction81" id="reaction81">
@@ -1198,14 +1198,14 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction83" id="reaction83">
 <Reactant specieID="CKCam1N"/>
-<Reactant specieID="CKCam2N"/>
+<Reactant specieID="CKCamCa2N"/>
 <Product specieID="CKCamcomplex_0_1_0_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction84" id="reaction84">
 <Reactant specieID="CKCamcomplex_0_1_0_2"/>
 <Product specieID="CKCam1N"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction85" id="reaction85">
@@ -1246,26 +1246,26 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction91" id="reaction91">
 <Reactant specieID="CKCam1N"/>
-<Reactant specieID="CKCam2C"/>
+<Reactant specieID="CKCamCa2C"/>
 <Product specieID="CKCamcomplex_0_1_2_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction92" id="reaction92">
 <Reactant specieID="CKCamcomplex_0_1_2_0"/>
 <Product specieID="CKCam1N"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction93" id="reaction93">
 <Reactant specieID="CKCam1N"/>
-<Reactant specieID="CKCam2C1N"/>
+<Reactant specieID="CKCamCa2C1N"/>
 <Product specieID="CKCamcomplex_0_1_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction94" id="reaction94">
 <Reactant specieID="CKCamcomplex_0_1_2_1"/>
 <Product specieID="CKCam1N"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction95" id="reaction95">
@@ -1281,74 +1281,74 @@ Now, the reactions themselves
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction97" id="reaction97">
-<Reactant specieID="CKCam2N"/>
+<Reactant specieID="CKCamCa2N"/>
 <Reactant specieID="CKCam1C"/>
 <Product specieID="CKCamcomplex_0_2_1_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction98" id="reaction98">
 <Reactant specieID="CKCamcomplex_0_2_1_0"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <Product specieID="CKCam1C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction99" id="reaction99">
-<Reactant specieID="CKCam2N"/>
+<Reactant specieID="CKCamCa2N"/>
 <Reactant specieID="CKCam1C1N"/>
 <Product specieID="CKCamcomplex_0_2_1_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction100" id="reaction100">
 <Reactant specieID="CKCamcomplex_0_2_1_1"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <Product specieID="CKCam1C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction101" id="reaction101">
-<Reactant specieID="CKCam2N"/>
+<Reactant specieID="CKCamCa2N"/>
 <Reactant specieID="CKCam1C2N"/>
 <Product specieID="CKCamcomplex_0_2_1_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction102" id="reaction102">
 <Reactant specieID="CKCamcomplex_0_2_1_2"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <Product specieID="CKCam1C2N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction103" id="reaction103">
-<Reactant specieID="CKCam2N"/>
-<Reactant specieID="CKCam2C"/>
+<Reactant specieID="CKCamCa2N"/>
+<Reactant specieID="CKCamCa2C"/>
 <Product specieID="CKCamcomplex_0_2_2_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction104" id="reaction104">
 <Reactant specieID="CKCamcomplex_0_2_2_0"/>
-<Product specieID="CKCam2N"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2N"/>
+<Product specieID="CKCamCa2C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction105" id="reaction105">
-<Reactant specieID="CKCam2N"/>
-<Reactant specieID="CKCam2C1N"/>
+<Reactant specieID="CKCamCa2N"/>
+<Reactant specieID="CKCamCa2C1N"/>
 <Product specieID="CKCamcomplex_0_2_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction106" id="reaction106">
 <Reactant specieID="CKCamcomplex_0_2_2_1"/>
-<Product specieID="CKCam2N"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2N"/>
+<Product specieID="CKCamCa2C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction107" id="reaction107">
-<Reactant specieID="CKCam2N"/>
+<Reactant specieID="CKCamCa2N"/>
 <Reactant specieID="CKCamCa4"/>
 <Product specieID="CKCamcomplex_0_2_2_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction108" id="reaction108">
 <Reactant specieID="CKCamcomplex_0_2_2_2"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <Product specieID="CKCamCa4"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
@@ -1378,26 +1378,26 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction113" id="reaction113">
 <Reactant specieID="CKCam1C"/>
-<Reactant specieID="CKCam2C"/>
+<Reactant specieID="CKCamCa2C"/>
 <Product specieID="CKCamcomplex_1_0_2_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction114" id="reaction114">
 <Reactant specieID="CKCamcomplex_1_0_2_0"/>
 <Product specieID="CKCam1C"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction115" id="reaction115">
 <Reactant specieID="CKCam1C"/>
-<Reactant specieID="CKCam2C1N"/>
+<Reactant specieID="CKCamCa2C1N"/>
 <Product specieID="CKCamcomplex_1_0_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction116" id="reaction116">
 <Reactant specieID="CKCamcomplex_1_0_2_1"/>
 <Product specieID="CKCam1C"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction117" id="reaction117">
@@ -1426,26 +1426,26 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction121" id="reaction121">
 <Reactant specieID="CKCam1C1N"/>
-<Reactant specieID="CKCam2C"/>
+<Reactant specieID="CKCamCa2C"/>
 <Product specieID="CKCamcomplex_1_1_2_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction122" id="reaction122">
 <Reactant specieID="CKCamcomplex_1_1_2_0"/>
 <Product specieID="CKCam1C1N"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction123" id="reaction123">
 <Reactant specieID="CKCam1C1N"/>
-<Reactant specieID="CKCam2C1N"/>
+<Reactant specieID="CKCamCa2C1N"/>
 <Product specieID="CKCamcomplex_1_1_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction124" id="reaction124">
 <Reactant specieID="CKCamcomplex_1_1_2_1"/>
 <Product specieID="CKCam1C1N"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction125" id="reaction125">
@@ -1462,26 +1462,26 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction127" id="reaction127">
 <Reactant specieID="CKCam1C2N"/>
-<Reactant specieID="CKCam2C"/>
+<Reactant specieID="CKCamCa2C"/>
 <Product specieID="CKCamcomplex_1_2_2_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction128" id="reaction128">
 <Reactant specieID="CKCamcomplex_1_2_2_0"/>
 <Product specieID="CKCam1C2N"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction129" id="reaction129">
 <Reactant specieID="CKCam1C2N"/>
-<Reactant specieID="CKCam2C1N"/>
+<Reactant specieID="CKCamCa2C1N"/>
 <Product specieID="CKCamcomplex_1_2_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction130" id="reaction130">
 <Reactant specieID="CKCamcomplex_1_2_2_1"/>
 <Product specieID="CKCam1C2N"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction131" id="reaction131">
@@ -1497,38 +1497,38 @@ Now, the reactions themselves
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction133" id="reaction133">
-<Reactant specieID="CKCam2C"/>
-<Reactant specieID="CKCam2C1N"/>
+<Reactant specieID="CKCamCa2C"/>
+<Reactant specieID="CKCamCa2C1N"/>
 <Product specieID="CKCamcomplex_2_0_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction134" id="reaction134">
 <Reactant specieID="CKCamcomplex_2_0_2_1"/>
-<Product specieID="CKCam2C"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C"/>
+<Product specieID="CKCamCa2C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction135" id="reaction135">
-<Reactant specieID="CKCam2C"/>
+<Reactant specieID="CKCamCa2C"/>
 <Reactant specieID="CKCamCa4"/>
 <Product specieID="CKCamcomplex_2_0_2_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction136" id="reaction136">
 <Reactant specieID="CKCamcomplex_2_0_2_2"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <Product specieID="CKCamCa4"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction137" id="reaction137">
-<Reactant specieID="CKCam2C1N"/>
+<Reactant specieID="CKCamCa2C1N"/>
 <Reactant specieID="CKCamCa4"/>
 <Product specieID="CKCamcomplex_2_1_2_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction138" id="reaction138">
 <Reactant specieID="CKCamcomplex_2_1_2_2"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <Product specieID="CKCamCa4"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
@@ -1553,13 +1553,13 @@ Now, the reactions themselves
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction143" id="reaction143">
-<Reactant specieID="CKCam2N" power="2"/>
+<Reactant specieID="CKCamCa2N" power="2"/>
 <Product specieID="CKCamcomplex_0_2_0_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction144" id="reaction144">
 <Reactant specieID="CKCamcomplex_0_2_0_2"/>
-<Product specieID="CKCam2N" power="2"/>
+<Product specieID="CKCamCa2N" power="2"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction145" id="reaction145">
@@ -1593,23 +1593,23 @@ Now, the reactions themselves
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction151" id="reaction151">
-<Reactant specieID="CKCam2C" power="2"/>
+<Reactant specieID="CKCamCa2C" power="2"/>
 <Product specieID="CKCamcomplex_2_0_2_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction152" id="reaction152">
 <Reactant specieID="CKCamcomplex_2_0_2_0"/>
-<Product specieID="CKCam2C" power="2"/>
+<Product specieID="CKCamCa2C" power="2"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction153" id="reaction153">
-<Reactant specieID="CKCam2C1N" power="2"/>
+<Reactant specieID="CKCamCa2C1N" power="2"/>
 <Product specieID="CKCamcomplex_2_1_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction154" id="reaction154">
 <Reactant specieID="CKCamcomplex_2_1_2_1"/>
-<Product specieID="CKCam2C1N" power="2"/>
+<Product specieID="CKCamCa2C1N" power="2"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction155" id="reaction155">
@@ -1636,14 +1636,14 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction159" id="reaction159">
 <Reactant specieID="CKCamcomplex_0_0_0_2"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <Product specieID="CKpCam"/>
 <forwardRate>0.0</forwardRate>
 </Reaction>
 <Reaction name="reaction160" id="reaction160">
 <Reactant specieID="CKCamcomplex_0_0_0_2"/>
 <Product specieID="CKCam"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
 <Reaction name="reaction161" id="reaction161">
@@ -1684,26 +1684,26 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction167" id="reaction167">
 <Reactant specieID="CKCamcomplex_0_0_2_0"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <Product specieID="CKpCam"/>
 <forwardRate>0.0</forwardRate>
 </Reaction>
 <Reaction name="reaction168" id="reaction168">
 <Reactant specieID="CKCamcomplex_0_0_2_0"/>
 <Product specieID="CKCam"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction169" id="reaction169">
 <Reactant specieID="CKCamcomplex_0_0_2_1"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <Product specieID="CKpCam"/>
 <forwardRate>0.0</forwardRate>
 </Reaction>
 <Reaction name="reaction170" id="reaction170">
 <Reactant specieID="CKCamcomplex_0_0_2_1"/>
 <Product specieID="CKCam"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction171" id="reaction171">
@@ -1720,14 +1720,14 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction173" id="reaction173">
 <Reactant specieID="CKCamcomplex_0_1_0_2"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <Product specieID="CKpCam1N"/>
 <forwardRate>6e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction174" id="reaction174">
 <Reactant specieID="CKCamcomplex_0_1_0_2"/>
 <Product specieID="CKCam1N"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
 <Reaction name="reaction175" id="reaction175">
@@ -1768,26 +1768,26 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction181" id="reaction181">
 <Reactant specieID="CKCamcomplex_0_1_2_0"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <Product specieID="CKpCam1N"/>
 <forwardRate>6e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction182" id="reaction182">
 <Reactant specieID="CKCamcomplex_0_1_2_0"/>
 <Product specieID="CKCam1N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction183" id="reaction183">
 <Reactant specieID="CKCamcomplex_0_1_2_1"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <Product specieID="CKpCam1N"/>
 <forwardRate>6e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction184" id="reaction184">
 <Reactant specieID="CKCamcomplex_0_1_2_1"/>
 <Product specieID="CKCam1N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction185" id="reaction185">
@@ -1805,72 +1805,72 @@ Now, the reactions themselves
 <Reaction name="reaction187" id="reaction187">
 <Reactant specieID="CKCamcomplex_0_2_1_0"/>
 <Product specieID="CKCam1C"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
 <Reaction name="reaction188" id="reaction188">
 <Reactant specieID="CKCamcomplex_0_2_1_0"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <Product specieID="CKpCam1C"/>
 <forwardRate>3.2e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction189" id="reaction189">
 <Reactant specieID="CKCamcomplex_0_2_1_1"/>
 <Product specieID="CKCam1C1N"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
 <Reaction name="reaction190" id="reaction190">
 <Reactant specieID="CKCamcomplex_0_2_1_1"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <Product specieID="CKpCam1C1N"/>
 <forwardRate>9.400000000000001e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction191" id="reaction191">
 <Reactant specieID="CKCamcomplex_0_2_1_2"/>
 <Product specieID="CKCam1C2N"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
 <Reaction name="reaction192" id="reaction192">
 <Reactant specieID="CKCamcomplex_0_2_1_2"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <Product specieID="CKpCam1C2N"/>
 <forwardRate>0.000154</forwardRate>
 </Reaction>
 <Reaction name="reaction193" id="reaction193">
 <Reactant specieID="CKCamcomplex_0_2_2_0"/>
-<Product specieID="CKCam2C"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKCamCa2C"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
 <Reaction name="reaction194" id="reaction194">
 <Reactant specieID="CKCamcomplex_0_2_2_0"/>
-<Product specieID="CKCam2N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKCamCa2N"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction195" id="reaction195">
 <Reactant specieID="CKCamcomplex_0_2_2_1"/>
-<Product specieID="CKCam2C1N"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKCamCa2C1N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
 <Reaction name="reaction196" id="reaction196">
 <Reactant specieID="CKCamcomplex_0_2_2_1"/>
-<Product specieID="CKCam2N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKCamCa2N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction197" id="reaction197">
 <Reactant specieID="CKCamcomplex_0_2_2_2"/>
 <Product specieID="CKCamCa4"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
 <Reaction name="reaction198" id="reaction198">
 <Reactant specieID="CKCamcomplex_0_2_2_2"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <Product specieID="CKpCamCa4"/>
 <forwardRate>0.00096</forwardRate>
 </Reaction>
@@ -1900,26 +1900,26 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction203" id="reaction203">
 <Reactant specieID="CKCamcomplex_1_0_2_0"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <Product specieID="CKpCam1C"/>
 <forwardRate>3.2e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction204" id="reaction204">
 <Reactant specieID="CKCamcomplex_1_0_2_0"/>
 <Product specieID="CKCam1C"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction205" id="reaction205">
 <Reactant specieID="CKCamcomplex_1_0_2_1"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <Product specieID="CKpCam1C"/>
 <forwardRate>3.2e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction206" id="reaction206">
 <Reactant specieID="CKCamcomplex_1_0_2_1"/>
 <Product specieID="CKCam1C"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction207" id="reaction207">
@@ -1948,26 +1948,26 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction211" id="reaction211">
 <Reactant specieID="CKCamcomplex_1_1_2_0"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <Product specieID="CKpCam1C1N"/>
 <forwardRate>9.400000000000001e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction212" id="reaction212">
 <Reactant specieID="CKCamcomplex_1_1_2_0"/>
 <Product specieID="CKCam1C1N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction213" id="reaction213">
 <Reactant specieID="CKCamcomplex_1_1_2_1"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <Product specieID="CKpCam1C1N"/>
 <forwardRate>9.400000000000001e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction214" id="reaction214">
 <Reactant specieID="CKCamcomplex_1_1_2_1"/>
 <Product specieID="CKCam1C1N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction215" id="reaction215">
@@ -1984,26 +1984,26 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction217" id="reaction217">
 <Reactant specieID="CKCamcomplex_1_2_2_0"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <Product specieID="CKpCam1C2N"/>
 <forwardRate>0.000154</forwardRate>
 </Reaction>
 <Reaction name="reaction218" id="reaction218">
 <Reactant specieID="CKCamcomplex_1_2_2_0"/>
 <Product specieID="CKCam1C2N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction219" id="reaction219">
 <Reactant specieID="CKCamcomplex_1_2_2_1"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <Product specieID="CKpCam1C2N"/>
 <forwardRate>0.000154</forwardRate>
 </Reaction>
 <Reaction name="reaction220" id="reaction220">
 <Reactant specieID="CKCamcomplex_1_2_2_1"/>
 <Product specieID="CKCam1C2N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction221" id="reaction221">
@@ -2020,37 +2020,37 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction223" id="reaction223">
 <Reactant specieID="CKCamcomplex_2_0_2_1"/>
-<Product specieID="CKCam2C1N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKCamCa2C1N"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction224" id="reaction224">
 <Reactant specieID="CKCamcomplex_2_0_2_1"/>
-<Product specieID="CKCam2C"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKCamCa2C"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction225" id="reaction225">
 <Reactant specieID="CKCamcomplex_2_0_2_2"/>
 <Product specieID="CKCamCa4"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction226" id="reaction226">
 <Reactant specieID="CKCamcomplex_2_0_2_2"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <Product specieID="CKpCamCa4"/>
 <forwardRate>0.00096</forwardRate>
 </Reaction>
 <Reaction name="reaction227" id="reaction227">
 <Reactant specieID="CKCamcomplex_2_1_2_2"/>
 <Product specieID="CKCamCa4"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction228" id="reaction228">
 <Reactant specieID="CKCamcomplex_2_1_2_2"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <Product specieID="CKpCamCa4"/>
 <forwardRate>0.00096</forwardRate>
 </Reaction>
@@ -2068,8 +2068,8 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction231" id="reaction231">
 <Reactant specieID="CKCamcomplex_0_2_0_2"/>
-<Product specieID="CKCam2N"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKCamCa2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
 <Reaction name="reaction232" id="reaction232">
@@ -2092,14 +2092,14 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction235" id="reaction235">
 <Reactant specieID="CKCamcomplex_2_0_2_0"/>
-<Product specieID="CKCam2C"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKCamCa2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction236" id="reaction236">
 <Reactant specieID="CKCamcomplex_2_1_2_1"/>
-<Product specieID="CKCam2C1N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction237" id="reaction237">
@@ -2133,14 +2133,14 @@ Now, the reactions themselves
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction242" id="reaction242">
-<Reactant specieID="CKCam2N"/>
+<Reactant specieID="CKCamCa2N"/>
 <Reactant specieID="CKpCam"/>
 <Product specieID="CKpCamcomplex_0_0_0_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction243" id="reaction243">
 <Reactant specieID="CKpCamcomplex_0_0_0_2"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <Product specieID="CKpCam"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
@@ -2181,26 +2181,26 @@ Now, the reactions themselves
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction250" id="reaction250">
-<Reactant specieID="CKCam2C"/>
+<Reactant specieID="CKCamCa2C"/>
 <Reactant specieID="CKpCam"/>
 <Product specieID="CKpCamcomplex_0_0_2_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction251" id="reaction251">
 <Reactant specieID="CKpCamcomplex_0_0_2_0"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <Product specieID="CKpCam"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction252" id="reaction252">
-<Reactant specieID="CKCam2C1N"/>
+<Reactant specieID="CKCamCa2C1N"/>
 <Reactant specieID="CKpCam"/>
 <Product specieID="CKpCamcomplex_0_0_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction253" id="reaction253">
 <Reactant specieID="CKpCamcomplex_0_0_2_1"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <Product specieID="CKpCam"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
@@ -2241,14 +2241,14 @@ Now, the reactions themselves
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction260" id="reaction260">
-<Reactant specieID="CKCam2N"/>
+<Reactant specieID="CKCamCa2N"/>
 <Reactant specieID="CKpCam1N"/>
 <Product specieID="CKpCamcomplex_0_1_0_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction261" id="reaction261">
 <Reactant specieID="CKpCamcomplex_0_1_0_2"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <Product specieID="CKpCam1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
@@ -2289,26 +2289,26 @@ Now, the reactions themselves
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction268" id="reaction268">
-<Reactant specieID="CKCam2C"/>
+<Reactant specieID="CKCamCa2C"/>
 <Reactant specieID="CKpCam1N"/>
 <Product specieID="CKpCamcomplex_0_1_2_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction269" id="reaction269">
 <Reactant specieID="CKpCamcomplex_0_1_2_0"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <Product specieID="CKpCam1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction270" id="reaction270">
-<Reactant specieID="CKCam2C1N"/>
+<Reactant specieID="CKCamCa2C1N"/>
 <Reactant specieID="CKpCam1N"/>
 <Product specieID="CKpCamcomplex_0_1_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction271" id="reaction271">
 <Reactant specieID="CKpCamcomplex_0_1_2_1"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <Product specieID="CKpCam1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
@@ -2326,110 +2326,110 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction274" id="reaction274">
 <Reactant specieID="CKCam"/>
-<Reactant specieID="CKpCam2N"/>
+<Reactant specieID="CKpCamCa2N"/>
 <Product specieID="CKpCamcomplex_0_2_0_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction275" id="reaction275">
 <Reactant specieID="CKpCamcomplex_0_2_0_0"/>
 <Product specieID="CKCam"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction276" id="reaction276">
 <Reactant specieID="CKCam1N"/>
-<Reactant specieID="CKpCam2N"/>
+<Reactant specieID="CKpCamCa2N"/>
 <Product specieID="CKpCamcomplex_0_2_0_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction277" id="reaction277">
 <Reactant specieID="CKpCamcomplex_0_2_0_1"/>
 <Product specieID="CKCam1N"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction278" id="reaction278">
-<Reactant specieID="CKCam2N"/>
-<Reactant specieID="CKpCam2N"/>
+<Reactant specieID="CKCamCa2N"/>
+<Reactant specieID="CKpCamCa2N"/>
 <Product specieID="CKpCamcomplex_0_2_0_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction279" id="reaction279">
 <Reactant specieID="CKpCamcomplex_0_2_0_2"/>
-<Product specieID="CKCam2N"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKCamCa2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction280" id="reaction280">
 <Reactant specieID="CKCam1C"/>
-<Reactant specieID="CKpCam2N"/>
+<Reactant specieID="CKpCamCa2N"/>
 <Product specieID="CKpCamcomplex_0_2_1_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction281" id="reaction281">
 <Reactant specieID="CKpCamcomplex_0_2_1_0"/>
 <Product specieID="CKCam1C"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction282" id="reaction282">
 <Reactant specieID="CKCam1C1N"/>
-<Reactant specieID="CKpCam2N"/>
+<Reactant specieID="CKpCamCa2N"/>
 <Product specieID="CKpCamcomplex_0_2_1_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction283" id="reaction283">
 <Reactant specieID="CKpCamcomplex_0_2_1_1"/>
 <Product specieID="CKCam1C1N"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction284" id="reaction284">
 <Reactant specieID="CKCam1C2N"/>
-<Reactant specieID="CKpCam2N"/>
+<Reactant specieID="CKpCamCa2N"/>
 <Product specieID="CKpCamcomplex_0_2_1_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction285" id="reaction285">
 <Reactant specieID="CKpCamcomplex_0_2_1_2"/>
 <Product specieID="CKCam1C2N"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction286" id="reaction286">
-<Reactant specieID="CKCam2C"/>
-<Reactant specieID="CKpCam2N"/>
+<Reactant specieID="CKCamCa2C"/>
+<Reactant specieID="CKpCamCa2N"/>
 <Product specieID="CKpCamcomplex_0_2_2_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction287" id="reaction287">
 <Reactant specieID="CKpCamcomplex_0_2_2_0"/>
-<Product specieID="CKCam2C"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKCamCa2C"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction288" id="reaction288">
-<Reactant specieID="CKCam2C1N"/>
-<Reactant specieID="CKpCam2N"/>
+<Reactant specieID="CKCamCa2C1N"/>
+<Reactant specieID="CKpCamCa2N"/>
 <Product specieID="CKpCamcomplex_0_2_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction289" id="reaction289">
 <Reactant specieID="CKpCamcomplex_0_2_2_1"/>
-<Product specieID="CKCam2C1N"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKCamCa2C1N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction290" id="reaction290">
 <Reactant specieID="CKCamCa4"/>
-<Reactant specieID="CKpCam2N"/>
+<Reactant specieID="CKpCamCa2N"/>
 <Product specieID="CKpCamcomplex_0_2_2_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction291" id="reaction291">
 <Reactant specieID="CKpCamcomplex_0_2_2_2"/>
 <Product specieID="CKCamCa4"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction292" id="reaction292">
@@ -2457,14 +2457,14 @@ Now, the reactions themselves
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction296" id="reaction296">
-<Reactant specieID="CKCam2N"/>
+<Reactant specieID="CKCamCa2N"/>
 <Reactant specieID="CKpCam1C"/>
 <Product specieID="CKpCamcomplex_1_0_0_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction297" id="reaction297">
 <Reactant specieID="CKpCamcomplex_1_0_0_2"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <Product specieID="CKpCam1C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
@@ -2505,26 +2505,26 @@ Now, the reactions themselves
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction304" id="reaction304">
-<Reactant specieID="CKCam2C"/>
+<Reactant specieID="CKCamCa2C"/>
 <Reactant specieID="CKpCam1C"/>
 <Product specieID="CKpCamcomplex_1_0_2_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction305" id="reaction305">
 <Reactant specieID="CKpCamcomplex_1_0_2_0"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <Product specieID="CKpCam1C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction306" id="reaction306">
-<Reactant specieID="CKCam2C1N"/>
+<Reactant specieID="CKCamCa2C1N"/>
 <Reactant specieID="CKpCam1C"/>
 <Product specieID="CKpCamcomplex_1_0_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction307" id="reaction307">
 <Reactant specieID="CKpCamcomplex_1_0_2_1"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <Product specieID="CKpCam1C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
@@ -2565,14 +2565,14 @@ Now, the reactions themselves
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction314" id="reaction314">
-<Reactant specieID="CKCam2N"/>
+<Reactant specieID="CKCamCa2N"/>
 <Reactant specieID="CKpCam1C1N"/>
 <Product specieID="CKpCamcomplex_1_1_0_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction315" id="reaction315">
 <Reactant specieID="CKpCamcomplex_1_1_0_2"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <Product specieID="CKpCam1C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
@@ -2613,26 +2613,26 @@ Now, the reactions themselves
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction322" id="reaction322">
-<Reactant specieID="CKCam2C"/>
+<Reactant specieID="CKCamCa2C"/>
 <Reactant specieID="CKpCam1C1N"/>
 <Product specieID="CKpCamcomplex_1_1_2_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction323" id="reaction323">
 <Reactant specieID="CKpCamcomplex_1_1_2_0"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <Product specieID="CKpCam1C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction324" id="reaction324">
-<Reactant specieID="CKCam2C1N"/>
+<Reactant specieID="CKCamCa2C1N"/>
 <Reactant specieID="CKpCam1C1N"/>
 <Product specieID="CKpCamcomplex_1_1_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction325" id="reaction325">
 <Reactant specieID="CKpCamcomplex_1_1_2_1"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <Product specieID="CKpCam1C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
@@ -2673,14 +2673,14 @@ Now, the reactions themselves
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction332" id="reaction332">
-<Reactant specieID="CKCam2N"/>
+<Reactant specieID="CKCamCa2N"/>
 <Reactant specieID="CKpCam1C2N"/>
 <Product specieID="CKpCamcomplex_1_2_0_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction333" id="reaction333">
 <Reactant specieID="CKpCamcomplex_1_2_0_2"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <Product specieID="CKpCam1C2N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
@@ -2721,26 +2721,26 @@ Now, the reactions themselves
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction340" id="reaction340">
-<Reactant specieID="CKCam2C"/>
+<Reactant specieID="CKCamCa2C"/>
 <Reactant specieID="CKpCam1C2N"/>
 <Product specieID="CKpCamcomplex_1_2_2_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction341" id="reaction341">
 <Reactant specieID="CKpCamcomplex_1_2_2_0"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <Product specieID="CKpCam1C2N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction342" id="reaction342">
-<Reactant specieID="CKCam2C1N"/>
+<Reactant specieID="CKCamCa2C1N"/>
 <Reactant specieID="CKpCam1C2N"/>
 <Product specieID="CKpCamcomplex_1_2_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction343" id="reaction343">
 <Reactant specieID="CKpCamcomplex_1_2_2_1"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <Product specieID="CKpCam1C2N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
@@ -2758,218 +2758,218 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction346" id="reaction346">
 <Reactant specieID="CKCam"/>
-<Reactant specieID="CKpCam2C"/>
+<Reactant specieID="CKpCamCa2C"/>
 <Product specieID="CKpCamcomplex_2_0_0_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction347" id="reaction347">
 <Reactant specieID="CKpCamcomplex_2_0_0_0"/>
 <Product specieID="CKCam"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction348" id="reaction348">
 <Reactant specieID="CKCam1N"/>
-<Reactant specieID="CKpCam2C"/>
+<Reactant specieID="CKpCamCa2C"/>
 <Product specieID="CKpCamcomplex_2_0_0_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction349" id="reaction349">
 <Reactant specieID="CKpCamcomplex_2_0_0_1"/>
 <Product specieID="CKCam1N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction350" id="reaction350">
-<Reactant specieID="CKCam2N"/>
-<Reactant specieID="CKpCam2C"/>
+<Reactant specieID="CKCamCa2N"/>
+<Reactant specieID="CKpCamCa2C"/>
 <Product specieID="CKpCamcomplex_2_0_0_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction351" id="reaction351">
 <Reactant specieID="CKpCamcomplex_2_0_0_2"/>
-<Product specieID="CKCam2N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKCamCa2N"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction352" id="reaction352">
 <Reactant specieID="CKCam1C"/>
-<Reactant specieID="CKpCam2C"/>
+<Reactant specieID="CKpCamCa2C"/>
 <Product specieID="CKpCamcomplex_2_0_1_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction353" id="reaction353">
 <Reactant specieID="CKpCamcomplex_2_0_1_0"/>
 <Product specieID="CKCam1C"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction354" id="reaction354">
 <Reactant specieID="CKCam1C1N"/>
-<Reactant specieID="CKpCam2C"/>
+<Reactant specieID="CKpCamCa2C"/>
 <Product specieID="CKpCamcomplex_2_0_1_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction355" id="reaction355">
 <Reactant specieID="CKpCamcomplex_2_0_1_1"/>
 <Product specieID="CKCam1C1N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction356" id="reaction356">
 <Reactant specieID="CKCam1C2N"/>
-<Reactant specieID="CKpCam2C"/>
+<Reactant specieID="CKpCamCa2C"/>
 <Product specieID="CKpCamcomplex_2_0_1_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction357" id="reaction357">
 <Reactant specieID="CKpCamcomplex_2_0_1_2"/>
 <Product specieID="CKCam1C2N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction358" id="reaction358">
-<Reactant specieID="CKCam2C"/>
-<Reactant specieID="CKpCam2C"/>
+<Reactant specieID="CKCamCa2C"/>
+<Reactant specieID="CKpCamCa2C"/>
 <Product specieID="CKpCamcomplex_2_0_2_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction359" id="reaction359">
 <Reactant specieID="CKpCamcomplex_2_0_2_0"/>
-<Product specieID="CKCam2C"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKCamCa2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction360" id="reaction360">
-<Reactant specieID="CKCam2C1N"/>
-<Reactant specieID="CKpCam2C"/>
+<Reactant specieID="CKCamCa2C1N"/>
+<Reactant specieID="CKpCamCa2C"/>
 <Product specieID="CKpCamcomplex_2_0_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction361" id="reaction361">
 <Reactant specieID="CKpCamcomplex_2_0_2_1"/>
-<Product specieID="CKCam2C1N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKCamCa2C1N"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction362" id="reaction362">
 <Reactant specieID="CKCamCa4"/>
-<Reactant specieID="CKpCam2C"/>
+<Reactant specieID="CKpCamCa2C"/>
 <Product specieID="CKpCamcomplex_2_0_2_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction363" id="reaction363">
 <Reactant specieID="CKpCamcomplex_2_0_2_2"/>
 <Product specieID="CKCamCa4"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction364" id="reaction364">
 <Reactant specieID="CKCam"/>
-<Reactant specieID="CKpCam2C1N"/>
+<Reactant specieID="CKpCamCa2C1N"/>
 <Product specieID="CKpCamcomplex_2_1_0_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction365" id="reaction365">
 <Reactant specieID="CKpCamcomplex_2_1_0_0"/>
 <Product specieID="CKCam"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction366" id="reaction366">
 <Reactant specieID="CKCam1N"/>
-<Reactant specieID="CKpCam2C1N"/>
+<Reactant specieID="CKpCamCa2C1N"/>
 <Product specieID="CKpCamcomplex_2_1_0_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction367" id="reaction367">
 <Reactant specieID="CKpCamcomplex_2_1_0_1"/>
 <Product specieID="CKCam1N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction368" id="reaction368">
-<Reactant specieID="CKCam2N"/>
-<Reactant specieID="CKpCam2C1N"/>
+<Reactant specieID="CKCamCa2N"/>
+<Reactant specieID="CKpCamCa2C1N"/>
 <Product specieID="CKpCamcomplex_2_1_0_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction369" id="reaction369">
 <Reactant specieID="CKpCamcomplex_2_1_0_2"/>
-<Product specieID="CKCam2N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKCamCa2N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction370" id="reaction370">
 <Reactant specieID="CKCam1C"/>
-<Reactant specieID="CKpCam2C1N"/>
+<Reactant specieID="CKpCamCa2C1N"/>
 <Product specieID="CKpCamcomplex_2_1_1_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction371" id="reaction371">
 <Reactant specieID="CKpCamcomplex_2_1_1_0"/>
 <Product specieID="CKCam1C"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction372" id="reaction372">
 <Reactant specieID="CKCam1C1N"/>
-<Reactant specieID="CKpCam2C1N"/>
+<Reactant specieID="CKpCamCa2C1N"/>
 <Product specieID="CKpCamcomplex_2_1_1_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction373" id="reaction373">
 <Reactant specieID="CKpCamcomplex_2_1_1_1"/>
 <Product specieID="CKCam1C1N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction374" id="reaction374">
 <Reactant specieID="CKCam1C2N"/>
-<Reactant specieID="CKpCam2C1N"/>
+<Reactant specieID="CKpCamCa2C1N"/>
 <Product specieID="CKpCamcomplex_2_1_1_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction375" id="reaction375">
 <Reactant specieID="CKpCamcomplex_2_1_1_2"/>
 <Product specieID="CKCam1C2N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction376" id="reaction376">
-<Reactant specieID="CKCam2C"/>
-<Reactant specieID="CKpCam2C1N"/>
+<Reactant specieID="CKCamCa2C"/>
+<Reactant specieID="CKpCamCa2C1N"/>
 <Product specieID="CKpCamcomplex_2_1_2_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction377" id="reaction377">
 <Reactant specieID="CKpCamcomplex_2_1_2_0"/>
-<Product specieID="CKCam2C"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKCamCa2C"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction378" id="reaction378">
-<Reactant specieID="CKCam2C1N"/>
-<Reactant specieID="CKpCam2C1N"/>
+<Reactant specieID="CKCamCa2C1N"/>
+<Reactant specieID="CKpCamCa2C1N"/>
 <Product specieID="CKpCamcomplex_2_1_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction379" id="reaction379">
 <Reactant specieID="CKpCamcomplex_2_1_2_1"/>
-<Product specieID="CKCam2C1N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction380" id="reaction380">
 <Reactant specieID="CKCamCa4"/>
-<Reactant specieID="CKpCam2C1N"/>
+<Reactant specieID="CKpCamCa2C1N"/>
 <Product specieID="CKpCamcomplex_2_1_2_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction381" id="reaction381">
 <Reactant specieID="CKpCamcomplex_2_1_2_2"/>
 <Product specieID="CKCamCa4"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction382" id="reaction382">
@@ -2997,14 +2997,14 @@ Now, the reactions themselves
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction386" id="reaction386">
-<Reactant specieID="CKCam2N"/>
+<Reactant specieID="CKCamCa2N"/>
 <Reactant specieID="CKpCamCa4"/>
 <Product specieID="CKpCamcomplex_2_2_0_2"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction387" id="reaction387">
 <Reactant specieID="CKpCamcomplex_2_2_0_2"/>
-<Product specieID="CKCam2N"/>
+<Product specieID="CKCamCa2N"/>
 <Product specieID="CKpCamCa4"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
@@ -3045,26 +3045,26 @@ Now, the reactions themselves
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction394" id="reaction394">
-<Reactant specieID="CKCam2C"/>
+<Reactant specieID="CKCamCa2C"/>
 <Reactant specieID="CKpCamCa4"/>
 <Product specieID="CKpCamcomplex_2_2_2_0"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction395" id="reaction395">
 <Reactant specieID="CKpCamcomplex_2_2_2_0"/>
-<Product specieID="CKCam2C"/>
+<Product specieID="CKCamCa2C"/>
 <Product specieID="CKpCamCa4"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
 <Reaction name="reaction396" id="reaction396">
-<Reactant specieID="CKCam2C1N"/>
+<Reactant specieID="CKCamCa2C1N"/>
 <Reactant specieID="CKpCamCa4"/>
 <Product specieID="CKpCamcomplex_2_2_2_1"/>
 <forwardRate>4.9999999999999996e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction397" id="reaction397">
 <Reactant specieID="CKpCamcomplex_2_2_2_1"/>
-<Product specieID="CKCam2C1N"/>
+<Product specieID="CKCamCa2C1N"/>
 <Product specieID="CKpCamCa4"/>
 <forwardRate>0.06</forwardRate>
 </Reaction>
@@ -3094,7 +3094,7 @@ Now, the reactions themselves
 <Reaction name="reaction402" id="reaction402">
 <Reactant specieID="CKpCamcomplex_0_0_0_2"/>
 <Product specieID="CKpCam"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
 <Reaction name="reaction403" id="reaction403">
@@ -3118,13 +3118,13 @@ Now, the reactions themselves
 <Reaction name="reaction406" id="reaction406">
 <Reactant specieID="CKpCamcomplex_0_0_2_0"/>
 <Product specieID="CKpCam"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction407" id="reaction407">
 <Reactant specieID="CKpCamcomplex_0_0_2_1"/>
 <Product specieID="CKpCam"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction408" id="reaction408">
@@ -3147,7 +3147,7 @@ Now, the reactions themselves
 <Reaction name="reaction411" id="reaction411">
 <Reactant specieID="CKpCamcomplex_0_1_0_2"/>
 <Product specieID="CKpCam1N"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
 <Reaction name="reaction412" id="reaction412">
@@ -3171,13 +3171,13 @@ Now, the reactions themselves
 <Reaction name="reaction415" id="reaction415">
 <Reactant specieID="CKpCamcomplex_0_1_2_0"/>
 <Product specieID="CKpCam1N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction416" id="reaction416">
 <Reactant specieID="CKpCamcomplex_0_1_2_1"/>
 <Product specieID="CKpCam1N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction417" id="reaction417">
@@ -3189,53 +3189,53 @@ Now, the reactions themselves
 <Reaction name="reaction418" id="reaction418">
 <Reactant specieID="CKpCamcomplex_0_2_0_0"/>
 <Product specieID="CKpCam"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>0.0</forwardRate>
 </Reaction>
 <Reaction name="reaction419" id="reaction419">
 <Reactant specieID="CKpCamcomplex_0_2_0_1"/>
 <Product specieID="CKpCam1N"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <forwardRate>6e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction420" id="reaction420">
 <Reactant specieID="CKpCamcomplex_0_2_0_2"/>
-<Product specieID="CKpCam2N" power="2"/>
+<Product specieID="CKpCamCa2N" power="2"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
 <Reaction name="reaction421" id="reaction421">
 <Reactant specieID="CKpCamcomplex_0_2_1_0"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <Product specieID="CKpCam1C"/>
 <forwardRate>3.2e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction422" id="reaction422">
 <Reactant specieID="CKpCamcomplex_0_2_1_1"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <Product specieID="CKpCam1C1N"/>
 <forwardRate>9.400000000000001e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction423" id="reaction423">
 <Reactant specieID="CKpCamcomplex_0_2_1_2"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <Product specieID="CKpCam1C2N"/>
 <forwardRate>0.000154</forwardRate>
 </Reaction>
 <Reaction name="reaction424" id="reaction424">
 <Reactant specieID="CKpCamcomplex_0_2_2_0"/>
-<Product specieID="CKpCam2N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2N"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction425" id="reaction425">
 <Reactant specieID="CKpCamcomplex_0_2_2_1"/>
-<Product specieID="CKpCam2N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction426" id="reaction426">
 <Reactant specieID="CKpCamcomplex_0_2_2_2"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <Product specieID="CKpCamCa4"/>
 <forwardRate>0.00096</forwardRate>
 </Reaction>
@@ -3253,7 +3253,7 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction429" id="reaction429">
 <Reactant specieID="CKpCamcomplex_1_0_0_2"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <Product specieID="CKpCam1C"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
@@ -3277,13 +3277,13 @@ Now, the reactions themselves
 <Reaction name="reaction433" id="reaction433">
 <Reactant specieID="CKpCamcomplex_1_0_2_0"/>
 <Product specieID="CKpCam1C"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction434" id="reaction434">
 <Reactant specieID="CKpCamcomplex_1_0_2_1"/>
 <Product specieID="CKpCam1C"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction435" id="reaction435">
@@ -3306,7 +3306,7 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction438" id="reaction438">
 <Reactant specieID="CKpCamcomplex_1_1_0_2"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <Product specieID="CKpCam1C1N"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
@@ -3330,13 +3330,13 @@ Now, the reactions themselves
 <Reaction name="reaction442" id="reaction442">
 <Reactant specieID="CKpCamcomplex_1_1_2_0"/>
 <Product specieID="CKpCam1C1N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction443" id="reaction443">
 <Reactant specieID="CKpCamcomplex_1_1_2_1"/>
 <Product specieID="CKpCam1C1N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction444" id="reaction444">
@@ -3359,7 +3359,7 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction447" id="reaction447">
 <Reactant specieID="CKpCamcomplex_1_2_0_2"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <Product specieID="CKpCam1C2N"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
@@ -3383,13 +3383,13 @@ Now, the reactions themselves
 <Reaction name="reaction451" id="reaction451">
 <Reactant specieID="CKpCamcomplex_1_2_2_0"/>
 <Product specieID="CKpCam1C2N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction452" id="reaction452">
 <Reactant specieID="CKpCamcomplex_1_2_2_1"/>
 <Product specieID="CKpCam1C2N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction453" id="reaction453">
@@ -3401,106 +3401,106 @@ Now, the reactions themselves
 <Reaction name="reaction454" id="reaction454">
 <Reactant specieID="CKpCamcomplex_2_0_0_0"/>
 <Product specieID="CKpCam"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>0.0</forwardRate>
 </Reaction>
 <Reaction name="reaction455" id="reaction455">
 <Reactant specieID="CKpCamcomplex_2_0_0_1"/>
 <Product specieID="CKpCam1N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>6e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction456" id="reaction456">
 <Reactant specieID="CKpCamcomplex_2_0_0_2"/>
-<Product specieID="CKpCam2N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2N"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
 <Reaction name="reaction457" id="reaction457">
 <Reactant specieID="CKpCamcomplex_2_0_1_0"/>
 <Product specieID="CKpCam1C"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>3.2e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction458" id="reaction458">
 <Reactant specieID="CKpCamcomplex_2_0_1_1"/>
 <Product specieID="CKpCam1C1N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>9.400000000000001e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction459" id="reaction459">
 <Reactant specieID="CKpCamcomplex_2_0_1_2"/>
 <Product specieID="CKpCam1C2N"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <forwardRate>0.000154</forwardRate>
 </Reaction>
 <Reaction name="reaction460" id="reaction460">
 <Reactant specieID="CKpCamcomplex_2_0_2_0"/>
-<Product specieID="CKpCam2C" power="2"/>
+<Product specieID="CKpCamCa2C" power="2"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction461" id="reaction461">
 <Reactant specieID="CKpCamcomplex_2_0_2_1"/>
-<Product specieID="CKpCam2C"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction462" id="reaction462">
 <Reactant specieID="CKpCamcomplex_2_0_2_2"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <Product specieID="CKpCamCa4"/>
 <forwardRate>0.00096</forwardRate>
 </Reaction>
 <Reaction name="reaction463" id="reaction463">
 <Reactant specieID="CKpCamcomplex_2_1_0_0"/>
 <Product specieID="CKpCam"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.0</forwardRate>
 </Reaction>
 <Reaction name="reaction464" id="reaction464">
 <Reactant specieID="CKpCamcomplex_2_1_0_1"/>
 <Product specieID="CKpCam1N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>6e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction465" id="reaction465">
 <Reactant specieID="CKpCamcomplex_2_1_0_2"/>
-<Product specieID="CKpCam2N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
 <Reaction name="reaction466" id="reaction466">
 <Reactant specieID="CKpCamcomplex_2_1_1_0"/>
 <Product specieID="CKpCam1C"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>3.2e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction467" id="reaction467">
 <Reactant specieID="CKpCamcomplex_2_1_1_1"/>
 <Product specieID="CKpCam1C1N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>9.400000000000001e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction468" id="reaction468">
 <Reactant specieID="CKpCamcomplex_2_1_1_2"/>
 <Product specieID="CKpCam1C2N"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>0.000154</forwardRate>
 </Reaction>
 <Reaction name="reaction469" id="reaction469">
 <Reactant specieID="CKpCamcomplex_2_1_2_0"/>
-<Product specieID="CKpCam2C"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C"/>
+<Product specieID="CKpCamCa2C1N"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction470" id="reaction470">
 <Reactant specieID="CKpCamcomplex_2_1_2_1"/>
-<Product specieID="CKpCam2C1N" power="2"/>
+<Product specieID="CKpCamCa2C1N" power="2"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
 <Reaction name="reaction471" id="reaction471">
 <Reactant specieID="CKpCamcomplex_2_1_2_2"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <Product specieID="CKpCamCa4"/>
 <forwardRate>0.00096</forwardRate>
 </Reaction>
@@ -3518,7 +3518,7 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction474" id="reaction474">
 <Reactant specieID="CKpCamcomplex_2_2_0_2"/>
-<Product specieID="CKpCam2N"/>
+<Product specieID="CKpCamCa2N"/>
 <Product specieID="CKpCamCa4"/>
 <forwardRate>0.00012</forwardRate>
 </Reaction>
@@ -3542,13 +3542,13 @@ Now, the reactions themselves
 </Reaction>
 <Reaction name="reaction478" id="reaction478">
 <Reactant specieID="CKpCamcomplex_2_2_2_0"/>
-<Product specieID="CKpCam2C"/>
+<Product specieID="CKpCamCa2C"/>
 <Product specieID="CKpCamCa4"/>
 <forwardRate>6.4e-05</forwardRate>
 </Reaction>
 <Reaction name="reaction479" id="reaction479">
 <Reactant specieID="CKpCamcomplex_2_2_2_1"/>
-<Product specieID="CKpCam2C1N"/>
+<Product specieID="CKpCamCa2C1N"/>
 <Product specieID="CKpCamCa4"/>
 <forwardRate>0.000124</forwardRate>
 </Reaction>
@@ -3596,20 +3596,20 @@ Now, the reactions themselves
       <reverseRate> 0 </reverseRate>
     </Reaction>
     
-    <Reaction name="CKpCam2NPP1_bind" id="CKpCam2NPP1_bind">
-      <Reactant specieID="CKpCam2N"/>
+    <Reaction name="CKpCamCa2NPP1_bind" id="CKpCamCa2NPP1_bind">
+      <Reactant specieID="CKpCamCa2N"/>
       <Reactant specieID="PP1"/>
-      	<Product specieID="CKpCam2NPP1"/>
+      	<Product specieID="CKpCamCa2NPP1"/>
       
       
 	<forwardRate> 0.04e-6 </forwardRate>
         <reverseRate> 0.34e-3 </reverseRate>
     </Reaction>
     
-    <Reaction name="CKpCam2NPP1_reac" id="CKpCam2NPP1_reac">
-      <Reactant specieID="CKpCam2NPP1"/>
+    <Reaction name="CKpCamCa2NPP1_reac" id="CKpCamCa2NPP1_reac">
+      <Reactant specieID="CKpCamCa2NPP1"/>
       <Product specieID="PP1"/>
-      <Product specieID="CKCam2N"/>
+      <Product specieID="CKCamCa2N"/>
       
       <forwardRate> 0.086e-3 </forwardRate>
       <reverseRate> 0 </reverseRate>
@@ -3634,20 +3634,20 @@ Now, the reactions themselves
     </Reaction>
 
     
-    <Reaction name="CKpCam2CPP1_bind" id="CKpCam2CPP1_bind">
-      <Reactant specieID="CKpCam2C"/>
+    <Reaction name="CKpCamCa2CPP1_bind" id="CKpCamCa2CPP1_bind">
+      <Reactant specieID="CKpCamCa2C"/>
       <Reactant specieID="PP1"/>
-      	<Product specieID="CKpCam2CPP1"/>
+      	<Product specieID="CKpCamCa2CPP1"/>
       
       
 	<forwardRate> 0.04e-6 </forwardRate>
         <reverseRate> 0.34e-3 </reverseRate>
     </Reaction>
     
-    <Reaction name="CKpCam2CPP1_reac" id="CKpCam2CPP1_reac">
-      <Reactant specieID="CKpCam2CPP1"/>
+    <Reaction name="CKpCamCa2CPP1_reac" id="CKpCamCa2CPP1_reac">
+      <Reactant specieID="CKpCamCa2CPP1"/>
       <Product specieID="PP1"/>
-      <Product specieID="CKCam2C"/>
+      <Product specieID="CKCamCa2C"/>
       
       <forwardRate> 0.086e-3 </forwardRate>
       <reverseRate> 0 </reverseRate>
@@ -3714,20 +3714,20 @@ Now, the reactions themselves
     </Reaction>
 
 
-    <Reaction name="CKpCam2C1NPP1_bind" id="CKpCam2C1NPP1_bind">
-      <Reactant specieID="CKpCam2C1N"/>
+    <Reaction name="CKpCamCa2C1NPP1_bind" id="CKpCamCa2C1NPP1_bind">
+      <Reactant specieID="CKpCamCa2C1N"/>
       <Reactant specieID="PP1"/>
-      	<Product specieID="CKpCam2C1NPP1"/>
+      	<Product specieID="CKpCamCa2C1NPP1"/>
       
       
 	<forwardRate> 0.04e-6 </forwardRate>
         <reverseRate> 0.34e-3 </reverseRate>
     </Reaction>
     
-    <Reaction name="CKpCam2C1NPP1_reac" id="CKpCam2C1NPP1_reac">
-      <Reactant specieID="CKpCam2C1NPP1"/>
+    <Reaction name="CKpCamCa2C1NPP1_reac" id="CKpCamCa2C1NPP1_reac">
+      <Reactant specieID="CKpCamCa2C1NPP1"/>
       <Product specieID="PP1"/>
-      <Product specieID="CKCam2C1N"/>
+      <Product specieID="CKCamCa2C1N"/>
       
       <forwardRate> 0.086e-3 </forwardRate>
       <reverseRate> 0 </reverseRate>
@@ -3869,10 +3869,10 @@ Now, the reactions themselves
     <reverseRate> 3.19e-6  </reverseRate>
   </Reaction>
 
-    <Reaction name="Cam2C+CaN--CaNCam2C reac" id="Cam2C+CaN--CaNCam2C_id">
-    <Reactant specieID="Cam2C"/>
+    <Reaction name="CamCa2C+CaN--CaNCamCa2C reac" id="CamCa2C+CaN--CaNCamCa2C_id">
+    <Reactant specieID="CamCa2C"/>
     <Reactant specieID="CaN"/>
-    <Product specieID="CaNCam2C"/>
+    <Product specieID="CaNCamCa2C"/>
     
     <forwardRate>   1.23e-9     </forwardRate>
     <reverseRate>  3.19e-6     </reverseRate>
@@ -3887,10 +3887,10 @@ Now, the reactions themselves
     <reverseRate>  3.19e-6     </reverseRate>
   </Reaction>
 
-  <Reaction name="Cam2N+CaN--CaNCam2N reac" id="Cam2N+CaN--CaNCam2N_id">
-    <Reactant specieID="Cam2N"/>
+  <Reaction name="CamCa2N+CaN--CaNCamCa2N reac" id="CamCa2N+CaN--CaNCamCa2N_id">
+    <Reactant specieID="CamCa2N"/>
     <Reactant specieID="CaN"/>
-    <Product specieID="CaNCam2N"/>
+    <Product specieID="CaNCamCa2N"/>
     
     <forwardRate> 4.16e-9  </forwardRate>
     <reverseRate> 3.19e-6 </reverseRate>
@@ -3906,10 +3906,10 @@ Now, the reactions themselves
     <reverseRate>  3.19e-6     </reverseRate>
   </Reaction>
 
-  <Reaction name="Cam2C1N+CaN--CaNCam2C1N reac" id="Cam2C1N+CaN--CaNCam2C1N_id">
-    <Reactant specieID="Cam2C1N"/>
+  <Reaction name="CamCa2C1N+CaN--CaNCamCa2C1N reac" id="CamCa2C1N+CaN--CaNCamCa2C1N_id">
+    <Reactant specieID="CamCa2C1N"/>
     <Reactant specieID="CaN"/>
-    <Product specieID="CaNCam2C1N"/>
+    <Product specieID="CaNCamCa2C1N"/>
     
     <forwardRate> 1.02e-7       </forwardRate>
     <reverseRate>  3.19e-6     </reverseRate>
@@ -3950,7 +3950,7 @@ Now, the reactions themselves
   
   <Reaction name="CaNreaction5" id="CaNreaction5">
     <Reactant specieID="Ca"/>
-    <Reactant specieID="CaNCam2N"/>
+    <Reactant specieID="CaNCamCa2N"/>
     <Product specieID="CaNCam1C2N"/>
     <forwardRate>0.0021375</forwardRate>
     <reverseRate>0.0398</reverseRate>
@@ -3958,14 +3958,14 @@ Now, the reactions themselves
   <Reaction name="CaNreaction7" id="CaNreaction7">
     <Reactant specieID="Ca"/>
     <Reactant specieID="CaNCam1C"/>
-    <Product specieID="CaNCam2C"/>
+    <Product specieID="CaNCamCa2C"/>
     <forwardRate>0.0088055</forwardRate>
     <reverseRate>0.933</reverseRate>
   </Reaction>
   <Reaction name="CaNreaction9" id="CaNreaction9">
     <Reactant specieID="Ca"/>
     <Reactant specieID="CaNCam1C1N"/>
-    <Product specieID="CaNCam2C1N"/>
+    <Product specieID="CaNCamCa2C1N"/>
     <forwardRate>0.01465</forwardRate>
     <reverseRate>0.933</reverseRate>
   </Reaction>
@@ -3986,7 +3986,7 @@ Now, the reactions themselves
   <Reaction name="CaNreaction15" id="CaNreaction15">
     <Reactant specieID="Ca"/>
     <Reactant specieID="CaNCam1N"/>
-    <Product specieID="CaNCam2N"/>
+    <Product specieID="CaNCamCa2N"/>
     <forwardRate>0.12199</forwardRate>
     <reverseRate>3.63</reverseRate>
   </Reaction>
@@ -4006,14 +4006,14 @@ Now, the reactions themselves
   </Reaction>
   <Reaction name="CaNreaction21" id="CaNreaction21">
     <Reactant specieID="Ca"/>
-    <Reactant specieID="CaNCam2C"/>
-    <Product specieID="CaNCam2C1N"/>
+    <Reactant specieID="CaNCamCa2C"/>
+    <Product specieID="CaNCamCa2C1N"/>
     <forwardRate>0.8886</forwardRate>
     <reverseRate>794.328</reverseRate>
   </Reaction>
   <Reaction name="CaNreaction23" id="CaNreaction23">
     <Reactant specieID="Ca"/>
-    <Reactant specieID="CaNCam2C1N"/>
+    <Reactant specieID="CaNCamCa2C1N"/>
     <Product specieID="CaNCamCa4"/>
     <forwardRate>0.122</forwardRate>
     <reverseRate>3.63</reverseRate>
