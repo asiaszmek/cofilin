@@ -30,11 +30,7 @@
     <NanoMolarity specieID="actin" value="19862.74" />
     <NanoMolarity specieID="Cofactin" value="142.07" />
     
-    <NanoMolarity specieID="CaN" value="0.1" />
-    <NanoMolarity specieID="CaNCam" value="4183.7" />
-    <NanoMolarity specieID="CaNCamCa2C" value="676.62" />
-    <NanoMolarity specieID="CaNCamCa2N" value="101.73" />
-    <NanoMolarity specieID="CaNCamCa4" value="1.65" />  
+    <NanoMolarity specieID="CaN" value="4000" />
 
     <NanoMolarity specieID="CK" value="19961.61" />
     <NanoMolarity specieID="CKp" value="0.0" />
