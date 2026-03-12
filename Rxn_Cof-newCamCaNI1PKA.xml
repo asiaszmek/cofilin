@@ -250,14 +250,7 @@ phosphatase reactions take from revision of Gs to improve Ca dep dphos of Dp32--
 	
 
     <Specie name="CaN" id="CaN" kdiff="0.61" kdiffunit="mu2/s"/>
-    <Specie name="CaNCam" id="CaNCam" kdiff="0.61" kdiffunit="mu2/s"/>
-    <Specie name="CaNCam1C" id="CaNCam1C" kdiff="0.61" kdiffunit="mu2/s"/>
-    <Specie name="CaNCam1N" id="CaNCam1N" kdiff="0.61" kdiffunit="mu2/s"/>
-    <Specie name="CaNCamCa2C" id="CaNCamCa2C" kdiff="0.61" kdiffunit="mu2/s"/>
-    <Specie name="CaNCamCa2N" id="CaNCamCa2N" kdiff="0.61" kdiffunit="mu2/s"/>
-    <Specie name="CaNCam1C1N" id="CaNCam1C1N" kdiff="0.61" kdiffunit="mu2/s"/>
-    <Specie name="CaNCam1C2N" id="CaNCam1C2N" kdiff="0.61" kdiffunit="mu2/s"/>
-    <Specie name="CaNCamCa2C1N" id="CaNCamCa2C1N" kdiff="0.61" kdiffunit="mu2/s"/>
+  
     <Specie name="CaNCamCa4" id="CaNCamCa4" kdiff="0.61" kdiffunit="mu2/s"/>
 <!-- Ligan -->
     <Specie name="L" id="L" kdiff="111.4" kdiffunit="mu2/s"/>
@@ -3850,174 +3843,15 @@ Now, the reactions themselves
     <!-- Cam or CamC2N or CamC2C or CamCa4 binding to CaN.  Check rates for microscopic reversibility -->
      <!--4x) Cam    +   CaN     <->  CaNCam     (in xpp: k33a=1 k_33a=3)  -->
 
-  <Reaction name="Cam+CaN--CaNCam reac" id="Cam+CaN--CaNCam_id">
-    <Reactant specieID="Cam"/>
-    <Reactant specieID="CaN"/>
-    <Product specieID="CaNCam"/>
-    
-    <forwardRate> 7.98e-13 </forwardRate>
-    <reverseRate>  3.19e-6    </reverseRate>
-  </Reaction>
+  <Reaction name = "CamCa4+CaN--CaNCamCa4 reac" id="CamCa4+CaN--CaNCamCa4_id">
+        <Reactant specieID="CamCa4"                 />
+        <Reactant specieID="CaN"                   />
+        <Product  specieID="CaNCamCa4"             />
 
+        <forwardRate> 0.046e-3       </forwardRate>
+        <reverseRate> 0.0012e-3      </reverseRate>
+    </Reaction>
 
-  <Reaction name="Cam1C+CaN--CaNCam1C reac" id="Cam1C+CaN--CaNCam1C_id">
-    <Reactant specieID="Cam1C"/>
-    <Reactant specieID="CaN"/>
-    <Product specieID="CaNCam1C"/>
-    
-    <forwardRate> 1.334e-10       </forwardRate>
-    <reverseRate> 3.19e-6  </reverseRate>
-  </Reaction>
-
-    <Reaction name="CamCa2C+CaN--CaNCamCa2C reac" id="CamCa2C+CaN--CaNCamCa2C_id">
-    <Reactant specieID="CamCa2C"/>
-    <Reactant specieID="CaN"/>
-    <Product specieID="CaNCamCa2C"/>
-    
-    <forwardRate>   1.23e-9     </forwardRate>
-    <reverseRate>  3.19e-6     </reverseRate>
-  </Reaction>
-  
-  <Reaction name="Cam1N+CaN--CaNCam1N reac" id="Cam1N+CaN--CaNCam1N_id">
-    <Reactant specieID="Cam1N"/>
-    <Reactant specieID="CaN"/>
-    <Product specieID="CaNCam1N"/>
-    
-    <forwardRate> 6.65e-11     </forwardRate>
-    <reverseRate>  3.19e-6     </reverseRate>
-  </Reaction>
-
-  <Reaction name="CamCa2N+CaN--CaNCamCa2N reac" id="CamCa2N+CaN--CaNCamCa2N_id">
-    <Reactant specieID="CamCa2N"/>
-    <Reactant specieID="CaN"/>
-    <Product specieID="CaNCamCa2N"/>
-    
-    <forwardRate> 4.16e-9  </forwardRate>
-    <reverseRate> 3.19e-6 </reverseRate>
-  </Reaction>
-
-
-  <Reaction name="Cam1C1N+CaN--CaNCam1C1N reac" id="Cam1C1N+CaN--CaNCam1C1N_id">
-    <Reactant specieID="Cam1C1N"/>
-    <Reactant specieID="CaN"/>
-    <Product specieID="CaNCam1C1N"/>
-    
-    <forwardRate> 6.65e-9       </forwardRate>
-    <reverseRate>  3.19e-6     </reverseRate>
-  </Reaction>
-
-  <Reaction name="CamCa2C1N+CaN--CaNCamCa2C1N reac" id="CamCa2C1N+CaN--CaNCamCa2C1N_id">
-    <Reactant specieID="CamCa2C1N"/>
-    <Reactant specieID="CaN"/>
-    <Product specieID="CaNCamCa2C1N"/>
-    
-    <forwardRate> 1.02e-7       </forwardRate>
-    <reverseRate>  3.19e-6     </reverseRate>
-  </Reaction>
-
-  <Reaction name="Cam1C2N+CaN--CaNCam1C2N reac" id="Cam1C2N+CaN--CaNCam1C2N_id">
-    <Reactant specieID="Cam1C2N"/>
-    <Reactant specieID="CaN"/>
-    <Product specieID="CaNCam1C2N"/>
-    
-    <forwardRate> 4.16e-7 </forwardRate>
-    <reverseRate>  3.19e-6</reverseRate>
-  </Reaction>
-
-  <Reaction name="CamCa4+CaN--CaNCamCa4 reac" id="CamCa4+CaN--CaNCamCa4_id">
-    <Reactant specieID="CamCa4"/>
-    <Reactant specieID="CaN"/>
-    <Product specieID="CaNCamCa4"/>
-    
-    <forwardRate> 6.4e-6       </forwardRate>
-    <reverseRate> 3.19e-6      </reverseRate>
-  </Reaction>
-
-  <Reaction name="CaNreaction1" id="CaNreaction1">
-    <Reactant specieID="Ca"/>
-    <Reactant specieID="CaNCam"/>
-    <Product specieID="CaNCam1C"/>
-    <forwardRate>0.00356</forwardRate>
-    <reverseRate>0.0398</reverseRate>
-  </Reaction>
-  <Reaction name="CaNreaction3" id="CaNreaction3">
-    <Reactant specieID="Ca"/>
-    <Reactant specieID="CaNCam1N"/>
-    <Product specieID="CaNCam1C1N"/>
-    <forwardRate>0.002137</forwardRate>
-    <reverseRate>0.0398</reverseRate>
-  </Reaction>
-  
-  <Reaction name="CaNreaction5" id="CaNreaction5">
-    <Reactant specieID="Ca"/>
-    <Reactant specieID="CaNCamCa2N"/>
-    <Product specieID="CaNCam1C2N"/>
-    <forwardRate>0.0021375</forwardRate>
-    <reverseRate>0.0398</reverseRate>
-  </Reaction>
-  <Reaction name="CaNreaction7" id="CaNreaction7">
-    <Reactant specieID="Ca"/>
-    <Reactant specieID="CaNCam1C"/>
-    <Product specieID="CaNCamCa2C"/>
-    <forwardRate>0.0088055</forwardRate>
-    <reverseRate>0.933</reverseRate>
-  </Reaction>
-  <Reaction name="CaNreaction9" id="CaNreaction9">
-    <Reactant specieID="Ca"/>
-    <Reactant specieID="CaNCam1C1N"/>
-    <Product specieID="CaNCamCa2C1N"/>
-    <forwardRate>0.01465</forwardRate>
-    <reverseRate>0.933</reverseRate>
-  </Reaction>
-  <Reaction name="CaNreaction11" id="CaNreaction11">
-    <Reactant specieID="Ca"/>
-    <Reactant specieID="CaNCam1C2N"/>
-    <Product specieID="CaNCamCa4"/>
-    <forwardRate>0.01469</forwardRate>
-    <reverseRate>0.933</reverseRate>
-  </Reaction>
-  <Reaction name="CaNreaction13" id="CaNreaction13">
-    <Reactant specieID="Ca"/>
-    <Reactant specieID="CaNCam"/>
-    <Product specieID="CaNCam1N"/>
-    <forwardRate>0.89292</forwardRate>
-    <reverseRate>794.328</reverseRate>
-  </Reaction>
-  <Reaction name="CaNreaction15" id="CaNreaction15">
-    <Reactant specieID="Ca"/>
-    <Reactant specieID="CaNCam1N"/>
-    <Product specieID="CaNCamCa2N"/>
-    <forwardRate>0.12199</forwardRate>
-    <reverseRate>3.63</reverseRate>
-  </Reaction>
-  <Reaction name="CaNreaction17" id="CaNreaction17">
-    <Reactant specieID="Ca"/>
-    <Reactant specieID="CaNCam1C"/>
-    <Product specieID="CaNCam1C1N"/>
-    <forwardRate>0.5341</forwardRate>
-    <reverseRate>794.328</reverseRate>
-  </Reaction>
-  <Reaction name="CaNreaction19" id="CaNreaction19">
-    <Reactant specieID="Ca"/>
-    <Reactant specieID="CaNCam1C1N"/>
-    <Product specieID="CaNCam1C2N"/>
-    <forwardRate>0.12199</forwardRate>
-    <reverseRate>3.63</reverseRate>
-  </Reaction>
-  <Reaction name="CaNreaction21" id="CaNreaction21">
-    <Reactant specieID="Ca"/>
-    <Reactant specieID="CaNCamCa2C"/>
-    <Product specieID="CaNCamCa2C1N"/>
-    <forwardRate>0.8886</forwardRate>
-    <reverseRate>794.328</reverseRate>
-  </Reaction>
-  <Reaction name="CaNreaction23" id="CaNreaction23">
-    <Reactant specieID="Ca"/>
-    <Reactant specieID="CaNCamCa2C1N"/>
-    <Product specieID="CaNCamCa4"/>
-    <forwardRate>0.122</forwardRate>
-    <reverseRate>3.63</reverseRate>
-  </Reaction>
 
 <!-- G_protein part -->
 
