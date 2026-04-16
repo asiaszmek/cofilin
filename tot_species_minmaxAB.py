@@ -31,10 +31,17 @@ tot_species=['dualPKA_PAK','PKAphos','dualCK_PKA','CKtot','actCof']# 'totCofALL'
 #tot_species=['pCoftot','pLIMKall','LIMKall']
 weight={}
 #signature molecules must be in tot_species or in molecules
-signature={'kinase':{'num':['CKtot','PKAphos','EpacAMP'],'denom':[]}, 'CK_PKA_PAK':{'num':['CKtot','PKAphos','dualPKA_PAK','dualCK_PKA'],'denom':[]},'cof_act':{'num':['actCof'],'denom':[]}}#,'CK_PKA':{'num':['CKtot','PKAphos','dualCK_PKA','EpacAMP'],'denom':[]}}
-#thresh keys must be regions in the morphology
+signature={'kinase':{'num':['CKtot','PKAphos','EpacAMP'],'denom':[]},
+           'CK_PKA_PAK':{'num':['CKtot','PKAphos','dualPKA_PAK','dualCK_PKA'],'denom':[]},
+           'cof_act':{'num':['actCof'],'denom':[]},
+           'CK_PKA_Gi':{'num':['CKtot','PKAphos','dualCK_PKA','EpacAMP','Gibg'],'denom':[]}}
+#thresh keys must be regions in the morphology.  Only influences plotting, not output
 #add in sa1[1] and sa1[2] for 10um dendrite
-thresh={'kinase':{'dend':0.2,'dendsub':0.25,'sa1[0]':0.25},'CK_PKA_PAK':{'dend':0.2,'dendsub':0.2,'sa1[0]':0.2},'cof_act':{'dend':0.1,'dendsub':0.2,'sa1[0]':0.15}}#,'CK_PKA':{'dend':0.2,'dendsub':0.2,'sa1[0]':0.25}}
+thresh={'kinase':{'dend':0.1,'sa1[0]':0.1,'sa1[1]':0.1,'sa1[2]':0.1},
+        'CK_PKA_PAK':{'dend':0.1,'sa1[0]':0.1,'sa1[1]':0.1,'sa1[2]':0.1},
+        'cof_act':{'dend':0.1,'sa1[0]':0.1,'sa1[1]':0.1,'sa1[2]':0.1},
+        'CK_PKA_Gi':{'dend':0.1,'sa1[0]':0.1,'sa1[1]':0.1,'sa1[2]':0.1}}
+
 #signature={}
 #thresh={}
 min_max={}   
@@ -42,49 +49,92 @@ min_max = {
     'kinase': {
         'num': {
             'CKtot': {
-                'dend': {'max': 9940.982, 'min': 1.557},
-                'dendsub': {'max': 1121.59, 'min': 0.0},
-                'sa1[0]': {'max': 35419.884, 'min': 0.0}
+                'dend': {'max': 9935.007, 'min': 8.809},
+                'sa1[0]': {'max': 35541.369, 'min': 0.0},
+                'sa1[1]': {'max': 35541.369, 'min': 0.0},
+                'sa1[2]': {'max': 35541.369, 'min': 0.0}
+                 },
+            'PKAphos': {
+                'dend': {'max': 1731.065, 'min': 92.499},
+                'sa1[0]': {'max': 1858.08, 'min': 83.69},
+                'sa1[1]': {'max': 1858.08, 'min': 83.69},
+                'sa1[2]': {'max': 1858.08, 'min': 83.69}
+                 },
+            'EpacAMP': {
+                'dend': {'max': 342.486, 'min': 0.704},
+                'sa1[0]': {'max': 419.443, 'min': 0.0},
+                'sa1[1]': {'max': 419.443, 'min': 0.0},
+                'sa1[2]': {'max': 419.443, 'min': 0.0},
+                 }
+            },
+        'denom': {}
+            },
+    'CK_PKA_PAK': {
+        'num': {
+            'dualPKA_PAK': {
+                'dend': {'max': 1588.676, 'min': 70.365},
+                'sa1[0]': {'max': 1704.625, 'min': 52.526},
+                'sa1[1]': {'max': 1704.625, 'min': 52.526},
+                'sa1[2]': {'max': 1704.625, 'min': 52.526},
+                 },
+            'dualCK_PKA': {
+                'dend': {'max': 346.024, 'min': 0.0},
+                'sa1[0]': {'max': 6189.336, 'min': 0.0},
+                'sa1[1]': {'max': 6189.336, 'min': 0.0},
+                'sa1[2]': {'max': 6189.336, 'min': 0.0},
+            },
+            'CKtot': {
+                'dend': {'max': 9935.007, 'min': 8.809},
+                'sa1[0]': {'max': 35541.369, 'min': 0.0},
+                'sa1[1]': {'max': 35541.369, 'min': 0.0},
+                'sa1[2]': {'max': 35541.369, 'min': 0.0}
             },
             'PKAphos': {
-                'dend': {'max': 1714.868, 'min': 21.172},
-                'dendsub': {'max': 382.91, 'min': 21.172},
-                'sa1[0]': {'max': 1916.904, 'min': 21.172}
+                'dend': {'max': 1731.065, 'min': 92.499},
+                'sa1[0]': {'max': 1858.08, 'min': 83.69},
+                'sa1[1]': {'max': 1858.08, 'min': 83.69},
+                'sa1[2]': {'max': 1858.08, 'min': 83.69},
             },
             'EpacAMP': {
-                'dend': {'max': 321.808, 'min': 0.0},
-                'dendsub': {'max': 344.043, 'min': 0.0},
-                'sa1[0]': {'max': 350.388, 'min': 0.0}
+                'dend': {'max': 342.486, 'min': 0.704},
+                'sa1[0]': {'max': 419.443, 'min': 0.0},
+                'sa1[1]': {'max': 419.443, 'min': 0.0},
+                'sa1[2]': {'max': 419.443, 'min': 0.0},
             }
         },
         'denom': {}
     },
-    'CK_PKA_PAK': {
+    'CK_PKA_Gi': {
         'num': {
-            'dualPKA_PAK': {
-                'dend': {'max': 1681.61, 'min': 65.28},
-                'dendsub': {'max': 194.024, 'min': 57.133},
-                'sa1[0]': {'max': 1777.516, 'min': 57.133}
-            },
             'dualCK_PKA': {
-                'dend': {'max': 449.965, 'min': 0.0},
-                'dendsub': {'max': 297.34, 'min': 0.0},
-                'sa1[0]': {'max': 7048.682, 'min': 0.0}
+                'dend': {'max': 346.024, 'min': 0.0},
+                'sa1[0]': {'max': 6189.336, 'min': 0.0},
+                'sa1[1]': {'max': 6189.336, 'min': 0.0},
+                'sa1[2]': {'max': 6189.336, 'min': 0.0},
             },
             'CKtot': {
-                'dend': {'max': 9940.982, 'min': 1.557},
-                'dendsub': {'max': 1121.59, 'min': 0.0},
-                'sa1[0]': {'max': 35419.884, 'min': 0.0}
+                'dend': {'max': 9935.007, 'min': 8.809},
+                'sa1[0]': {'max': 35541.369, 'min': 0.0},
+                'sa1[1]': {'max': 35541.369, 'min': 0.0},
+                'sa1[2]': {'max': 35541.369, 'min': 0.0}
             },
             'PKAphos': {
-                'dend': {'max': 1714.868, 'min': 21.172},
-                'dendsub': {'max': 382.91, 'min': 21.172},
-                'sa1[0]': {'max': 1916.904, 'min': 21.172}
+                'dend': {'max': 1731.065, 'min': 92.499},
+                'sa1[0]': {'max': 1858.08, 'min': 83.69},
+                'sa1[1]': {'max': 1858.08, 'min': 83.69},
+                'sa1[2]': {'max': 1858.08, 'min': 83.69},
             },
             'EpacAMP': {
-                'dend': {'max': 321.808, 'min': 0.0},
-                'dendsub': {'max': 344.043, 'min': 0.0},
-                'sa1[0]': {'max': 350.388, 'min': 0.0}
+                'dend': {'max': 342.486, 'min': 0.704},
+                'sa1[0]': {'max': 419.443, 'min': 0.0},
+                'sa1[1]': {'max': 419.443, 'min': 0.0},
+                'sa1[2]': {'max': 419.443, 'min': 0.0},
+            },
+            'Gibg': {
+                'dend': {'max': 512.471, 'min': 0.0},
+                'sa1[0]': {'max': 195.655, 'min': 0.0},
+                'sa1[1]': {'max': 195.655, 'min': 0.0},
+                'sa1[2]': {'max': 195.655, 'min': 0.0},
             }
         },
         'denom': {}
@@ -92,9 +142,10 @@ min_max = {
     'cof_act': {
         'num': {
             'actCof': {
-                'dend': {'max': 952.766, 'min': 18.629},
-                'dendsub': {'max': 115.407, 'min': 12.869},
-                'sa1[0]': {'max': 2283.916, 'min': 12.869}
+                'dend': {'max': 1108.441, 'min': 101.308},
+                'sa1[0]': {'max': 2452.716, 'min': 79.285},
+                'sa1[1]': {'max': 2452.716, 'min': 79.285},
+                'sa1[2]': {'max': 2452.716, 'min': 79.285},
             }
         },
         'denom': {}

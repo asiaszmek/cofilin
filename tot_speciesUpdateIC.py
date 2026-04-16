@@ -26,20 +26,14 @@ sub_species={'PKA':['PKA'],'PKAr':['PKA','PKAr','PKAcAMP2','PKAcAMP4'],
              'PP1':['PP1','Ip35PP1', 'pKalPP1','CKpPP1','CKpCamCa4PP1'],
              'I1':['Ip35','Ip35PP1','Ip35CaNCamCa4','Ip35PP1CaNCamCa4','I1']}
 ##phos=pka and ck, 
-tot_species=['PKAphos','CKtot','dualCK_PKA','dualPKA_PAK','actCof']#,'RacPAKtot','totCof','totCofALL']# 'pLIMKall','LIMKall','pCoftot','PKActot',
-#tot_species=['CK','totCofALL','LIMKtot','ssh','totRac','Kal','totPAK','CaN','Ng','PKAr','PKActot','actin','Gap','PP1','I1','PDE4','Epac','Calbin', 'AC8', 'AC1', 'Gs','R','GasGTP','RCap','SCap'] #sum molecules to ensure totals are correct
+tot_species=['PKAphos','CKtot','dualCK_PKA','dualPKA_PAK','actCof']#,'RacPAKtot','totCof','totCofALL']#]#['pLIMKall','LIMKall','pCoftot']#, 'pLIMKall','LIMKall']# 'PKActot',
+tot_species=['CK','totCofALL','LIMKtot','ssh','totRac','Kal','totPAK','CaN','Ng','PKAr','PKActot','actin','Gap','PP1','I1','PDE4','Epac','Calbin', 'AC8', 'AC1', 'Gs','R','GasGTP','RCap','SCap'] #sum molecules to ensure totals are correct
 #tot_species=['pCoftot','pLIMKall','LIMKall']
 weight={}
 #signature molecules must be in tot_species or in molecules
-signature={'kinase':{'num':['CKtot','PKAphos','EpacAMP'],'denom':[]},
-           'CK_PKA_PAK':{'num':['CKtot','PKAphos','dualPKA_PAK','dualCK_PKA'],'denom':[]},
-           'CK_PKA_Gi':{'num':['CKtot','PKAphos','dualCK_PKA','EpacAMP','Gibg'],'denom':[]},
-           'cof_act':{'num':['actCof'],'denom':[]}}
-#thresh keys must be regions in the morphology.  Only influences plotting, not output
-thresh={'kinase':{'dend':0.2,'dendsub':0.25,'sa1[0]':0.25},
-        'CK_PKA_PAK':{'dend':0.2,'dendsub':0.2,'sa1[0]':0.2},
-        'CK_PKA_Gi':{'dend':0.2,'dendsub':0.2,'sa1[0]':0.25},
-        'cof_act':{'dend':0.1,'dendsub':0.1,'sa1[0]':0.15}}
+signature={'kinase':{'num':['CKtot','PKAphos','EpacAMP'],'denom':[]}, 'CK_PKA_PAK':{'num':['CKtot','PKAphos','dualPKA_PAK','dualCK_PKA'],'denom':[]},'CK_PKA':{'num':['CKtot','PKAphos','dualCK_PKA','EpacAMP'],'denom':[]},'cof_act':{'num':['actCof'],'denom':[]}}
+#thresh keys must be regions in the morphology
+thresh={'kinase':{'dend':0.2,'dendsub':0.25,'sa1[0]':0.25},'CK_PKA_PAK':{'dend':0.2,'dendsub':0.2,'sa1[0]':0.2},'CK_PKA':{'dend':0.2,'dendsub':0.2,'sa1[0]':0.25},'cof_act':{'dend':0.1,'dendsub':0.1,'sa1[0]':0.15}}
 #signature={}
 #thresh={}
 min_max={}   

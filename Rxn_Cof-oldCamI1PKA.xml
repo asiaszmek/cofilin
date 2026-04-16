@@ -180,8 +180,8 @@ Now, the reactions themselves
 <Reactant specieID="CKCamCa4"/>
 <Product specieID="KalCKCamCa4"/>
 
-<forwardRate>0.000015e-3</forwardRate>
-<reverseRate> 0.12e-3</reverseRate>
+<forwardRate>0.0000075e-3</forwardRate>
+<reverseRate> 0.06e-3</reverseRate>
 <!--forwardRate> 0.000010e-3 </forwardRate>
 <reverseRate> 0.08e-3 </reverseRate-->
 
@@ -192,7 +192,7 @@ Now, the reactions themselves
 <Product specieID="CKCamCa4"/>
 <Product specieID="pKal"/>
 
-<forwardRate> 0.03e-3 </forwardRate>
+<forwardRate> 0.015e-3 </forwardRate>
 <!--forwardRate> 0.02e-3 </forwardRate-->
 <reverseRate> 0 </reverseRate>
 
@@ -205,8 +205,8 @@ Now, the reactions themselves
 <Reactant specieID="CKpCamCa4"/>
 <Product specieID="KalCKpCamCa4"/>
 
-<forwardRate>0.00015e-3</forwardRate>
-<reverseRate> 1.2e-3</reverseRate>
+<forwardRate>0.000075e-3</forwardRate>
+<reverseRate> 0.6e-3</reverseRate>
 <!--forwardRate>0.00010e-3</forwardRate>
 <reverseRate>0.8e-3</reverseRate-->
 
@@ -217,7 +217,7 @@ Now, the reactions themselves
 <Product specieID="CKpCamCa4"/>
 <Product specieID="pKal"/>
 
-<forwardRate>0.3e-3 </forwardRate>
+<forwardRate>0.15e-3 </forwardRate>
 <!--forwardRate>0.2e-3 </forwardRate-->
 <reverseRate> 0 </reverseRate>
 
@@ -225,15 +225,16 @@ Now, the reactions themselves
 
 
 <!--PKA to Kal Restore original rates
-2025 dec 18: double (back to 2023 rates) to add role for PKA -->
+2025 dec 18: double (back to 2023 rates) to add role for PKA 
+2026 feb 19: 50% higher again - more comparable to PKAcI1 rates-->
 <!--PKAc+Kal<->PKAc +pKal-->
 <Reaction id="Kal+PKAc--KalPKAc" name="Kal+PKAc--KalPKAc">
 <Reactant specieID="Kal"/>
 <Reactant specieID="PKAc"/>
 <Product specieID="KalPKAc"/>
 
-<forwardRate>0.0003e-3</forwardRate>
-<reverseRate> 2.4e-3</reverseRate>
+<forwardRate>0.0006e-3</forwardRate> 
+<reverseRate> 4.8e-3</reverseRate>
 <!--forwardRate>0.00010e-3</forwardRate>
 <reverseRate> 0.8e-3</reverseRate-->
 
@@ -244,7 +245,7 @@ Now, the reactions themselves
 <Product specieID="PKAc"/>
 <Product specieID="pKal"/>
 
-<forwardRate>0.6e-3 </forwardRate>
+<forwardRate>1.2e-3 </forwardRate>
 <!--forwardRate>0.2e-3 </forwardRate-->
 <reverseRate> 0 </reverseRate>
 
@@ -252,16 +253,17 @@ Now, the reactions themselves
 
 
 <!--PP1 inactivates Kal 3x faster to maintain balance with phos Kal
-2025 dec 18: 20% additional increase, to maintain basal -->
+2025 dec 18: 20% additional increase, to maintain basal 
+2026 feb 19: 20% additional increase, to maintain basal -->
 <!--PP1+Kal<->PP1 +pKal-->
 <Reaction id="pKal+PP1--pKalPP1" name="pKal+PP1--pKalPP1">
 <Reactant specieID="pKal"/>
 <Reactant specieID="PP1"/>
 <Product specieID="pKalPP1"/>
 
-<forwardRate> 0.00006e-3 </forwardRate>
+<forwardRate> 0.000072e-3 </forwardRate>
 <!--forwardRate> 0.0000333e-3 </forwardRate-->
-<reverseRate> 0.144e-3 </reverseRate>
+<reverseRate> 0.173e-3 </reverseRate>
 <!--reverseRate> 0.0267e-3 </reverseRate-->
 
 </Reaction>
@@ -270,7 +272,7 @@ Now, the reactions themselves
 <Product specieID="PP1"/>
 <Product specieID="Kal"/>
 
-<forwardRate> 0.036e-3 </forwardRate>
+<forwardRate> 0.0432e-3 </forwardRate>
 <!--forwardRate> 0.0033e-3 </forwardRate-->
 <reverseRate> 0 </reverseRate>
 
@@ -315,7 +317,7 @@ Now, the reactions themselves
 
 
 <!--RacGTP inactivation -->
-<!--RacGTP+ Gap<->RacGDP + Gap-->
+<!--RacGTP+ Gap<->RacGDP + Gap -->
 <Reaction id="RacGTP+Gap--GapRacGTP" name="RacGTP+Gap--GapRacGTP">
 <Reactant specieID="Gap"/>
 <Reactant specieID="RacGTP"/>
@@ -336,15 +338,16 @@ Now, the reactions themselves
 
 </Reaction>
 
-<!--RacGTP activate PAK, make faster to better follow RacGTP, but same affinity - same basal?-->
+<!--RacGTP activate PAK, make faster to better follow RacGTP, but same affinity - same basal?
+2026 feb 19: halve the rates to better match decay from Hedrick-->
 <!--RacGTP+PAK <->RacPAK-->
 <Reaction id="RacGTP+PAK--RacGTPPAK" name="RacGTP+PAK--RacGTPPAK">
 <Reactant specieID="PAK"/>
 <Reactant specieID="RacGTP"/>
 <Product specieID="RacPAK"/>
 
-<forwardRate>0.09432854292459061e-6</forwardRate>
-<reverseRate>0.01639e-3</reverseRate>
+<forwardRate>0.04716427e-6</forwardRate>
+<reverseRate>0.00819e-3</reverseRate>
 
 </Reaction>
 
@@ -453,7 +456,8 @@ Now, the reactions themselves
 
 
 <!--LIMK activated by PKAc restore original rates
-2025 dec 18: 50% increase (back to 2023 rates) to add role for PKA -->
+2025 dec 18: 50% increase (back to 2023 rates) to add role for PKA
+2026 feb 19: 50% higher - more comparable to PKAcI1 rates -->
 <!--PKAc+LIMK <->pLIMK+PKAc-->
 <Reaction id="PKAc+LIMK--LIMKPKAc" name="PKAc+LIMK--LIMKPKAc">
 <Reactant specieID="PKAc"/>
@@ -462,8 +466,8 @@ Now, the reactions themselves
 
 <!--forwardRate>0.133e-6</forwardRate--><!-- restore original rates-->
 <!--reverseRate>0.455e-3</reverseRate-->
-<forwardRate>0.6e-6</forwardRate>
-<reverseRate>2e-3</reverseRate>
+<forwardRate>0.9e-6</forwardRate>
+<reverseRate>3e-3</reverseRate>
 
 </Reaction>
 
@@ -472,13 +476,14 @@ Now, the reactions themselves
 <Product specieID="pLIMK"/>
 <Product specieID="PKAc"/>
 
-<forwardRate>0.5e-3</forwardRate>
+<forwardRate>0.75e-3</forwardRate>
 <!--forwardRate>0.112e-3</forwardRate-->
 <reverseRate> 0 </reverseRate>
 
 </Reaction>
 <!-- increase these two SSH rates by 40% and then 3x more to reduce pLIMK and pCof
-2025 dec 18: 20% increase to maintain basal -->
+2025 dec 18: 20% increase to maintain basal 
+2026 feb 19: 20% increase to maintain basal-->
 <!--SSH inactivation LIMK-->
 <!--pLIMK+SSH <->SSH+LIMK-->
 <Reaction id="pLIMK+SSH--SSHpLIMK" name="pLIMK+SSH--SSHpLIMK">
@@ -486,8 +491,8 @@ Now, the reactions themselves
 <Reactant specieID="SSH"/>
 <Product specieID="SSHpLIMK"/>
 
-<forwardRate>0.5695e-6</forwardRate> <!-- increased rates to reduce pCof --> 
-<reverseRate>2.118e-3</reverseRate>
+<forwardRate>0.6834e-6</forwardRate> <!-- increased rates to reduce pCof --> 
+<reverseRate>2.541e-3</reverseRate>
 
 </Reaction>
 
@@ -497,7 +502,7 @@ Now, the reactions themselves
 <Product specieID="SSH"/>
 <Product specieID="LIMK"/>
 
-<forwardRate>0.5292e-3</forwardRate>
+<forwardRate>0.6350e-3</forwardRate>
 <reverseRate> 0 </reverseRate>
 </Reaction>
 
@@ -526,7 +531,9 @@ Now, the reactions themselves
 </Reaction>
 
 
-<!--SSH activation Cof - increased 40%, then 3x-->
+<!--SSH activation Cof - increased 40%, then 3x
+2025 dec 18: 20% increase to maintain basal 
+2026 feb 19: 20% increase to maintain basal (and balance against pLIMK) -->
 <!--Cof+SSH <->SSH+pCof-->
 <Reaction id="pCof+SSH--SSHpCof" name="pCof+SSH--SSHpCof">
 <Reactant specieID="pCof"/>
@@ -534,8 +541,8 @@ Now, the reactions themselves
 <Product specieID="SSHpCof"/>
 
 
-<forwardRate>0.0182e-3</forwardRate>
-<reverseRate>0.0706</reverseRate>
+<forwardRate>0.0218e-3</forwardRate>
+<reverseRate>0.0847</reverseRate>
 
 </Reaction>
 
@@ -545,7 +552,7 @@ Now, the reactions themselves
 <Product specieID="Cof"/>
 
 
-<forwardRate>0.0192</forwardRate>
+<forwardRate>0.0230</forwardRate>
 <reverseRate> 0 </reverseRate>
 
 </Reaction>
